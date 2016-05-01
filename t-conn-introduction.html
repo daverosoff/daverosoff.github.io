@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--* Generated from MathBook XML source *-->
+<!--*    on 2016-05-01T09:28:22-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>NT Introduction</title>
+<meta name="Keywords" content="Authored in MathBook XML">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script xmlns:b64="https://github.com/ilyakharlamov/xslt_base64" type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["AMSmath.js", "AMSsymbols.js", "extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        equationNumbers: { autoNumber: "none",
+                           useLabelIds: true,
+                           // JS comment, XML CDATA protect XHTML quality of file
+                           // if removed in XSL, use entities
+                           //<![CDATA[
+                           formatID: function (n) {return String(n).replace(/[:'"<>&]/g,"")},
+                           //]]>
+                         },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    "HTML-CSS": {
+        scale: 88,
+    },
+});
+    </script><script xmlns:b64="https://github.com/ilyakharlamov/xslt_base64" type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full"></script><script xmlns:b64="https://github.com/ilyakharlamov/xslt_base64" type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script xmlns:b64="https://github.com/ilyakharlamov/xslt_base64" type="text/javascript" src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script xmlns:b64="https://github.com/ilyakharlamov/xslt_base64">
+$(function () {
+    // Make *any* div with class 'sage-compute' an executable Sage cell
+    sagecell.makeSagecell({inputLocation: 'div.sage-compute',
+                           linked: true,
+                           evalButtonText: 'Evaluate'});
+});
+$(function () {
+    // Make *any* div with class 'sage-display' a visible, uneditable Sage cell
+    sagecell.makeSagecell({inputLocation: 'div.sage-display',
+                           editor: 'codemirror-readonly',
+                           hide: ['evalButton', 'editorToggle', 'language']});
+});
+    </script><script xmlns:b64="https://github.com/ilyakharlamov/xslt_base64" type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script><link xmlns:b64="https://github.com/ilyakharlamov/xslt_base64" href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script xmlns:b64="https://github.com/ilyakharlamov/xslt_base64" type="text/javascript" src="https://aimath.org/knowl.js"></script><script xmlns:b64="https://github.com/ilyakharlamov/xslt_base64" src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script xmlns:b64="https://github.com/ilyakharlamov/xslt_base64" src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script xmlns:b64="https://github.com/ilyakharlamov/xslt_base64" src="https://aimath.org/mathbook/js/Mathbook.js"></script><link xmlns:b64="https://github.com/ilyakharlamov/xslt_base64" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic%7CSource+Code+Pro:400" rel="stylesheet" type="text/css">
+<link xmlns:b64="https://github.com/ilyakharlamov/xslt_base64" href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link xmlns:b64="https://github.com/ilyakharlamov/xslt_base64" href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-article has-toc has-sidebar-left">
+<div xmlns:b64="https://github.com/ilyakharlamov/xslt_base64" style="display:none;">\(\newcommand{\RR}{\mathbf{R}}
+\newcommand{\lt}{ &lt; }
+\newcommand{\gt}{ &gt; }
+\newcommand{\amp}{ &amp; }
+\)</div>
+<header id="masthead"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><span class="title">Connectivity</span></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav xmlns:b64="https://github.com/ilyakharlamov/xslt_base64" id="primary-navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="previous-button toolbar-item button" href="t-conn-acknowledgement.html">Previous</a><a class="up-button button toolbar-item" href="t-conn.html">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+</div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="t-conn-acknowledgement.html">Previous</a><a class="up-button button toolbar-item" href="t-conn.html">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+</div>
+</div></nav></header><div class="page">
+<aside xmlns:b64="https://github.com/ilyakharlamov/xslt_base64" id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="t-conn-acknowledgement.html"><span class="codenumber">1</span><span class="title">Acknowledgement</span></a></h2>
+<h2 class="link active"><a href="t-conn-introduction.html"><span class="codenumber">2</span><span class="title">Introduction</span></a></h2></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in MathBook XML</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://cdn.mathjax.org/mathjax/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section xmlns:b64="https://github.com/ilyakharlamov/xslt_base64" class="section" id="t-conn-introduction"><header><h1 class="heading" alt="Section 2 Introduction" title="Section 2 Introduction">
+<span class="type">Section</span><span class="codenumber">2</span><span class="title">Introduction</span><a href="t-conn-introduction.html" class="permalink">¶ permalink</a>
+</h1></header><p id="p-2">A connected topological space is one that you would say consists of only one “piece”. Of course, since we are topologists, we wish to make sense of this idea in terms of open (and closed) sets, but it is perhaps useful to explore a different characterization first.</p>
+<p id="p-3">We often say to beginning calculus students that a continuous function is one whose graph can be drawn without “picking up the pencil”. You might try to define a connected space in a similar way.</p>
+<article class="definition-like" id="t-conn-def-path"><h5 class="heading">
+<span class="type">Definition</span><span class="codenumber">2.1</span>
+</h5>
+<p id="p-4">A <!--Style me with CSS--><em>path</em> in a topological space \(X\) is a piecewise continuous function \(\gamma \colon [0, 1] \to X\).</p></article><p id="p-5">The idea of <a knowl="./knowl/t-conn-def-path.html" knowl-id="xref-t-conn-def-path" alt="Definition 2.1 " title="Definition 2.1 ">2.1</a> is that the points \(\gamma(0)\) and \(\gamma(1)\) are the two endpoints. Since the function \(\gamma\) is continuous, the images \(\gamma(t)\) for \(0 \lt t \lt 1\) link the two endpoints without picking up the pencil. Many reasonable people would object to <a knowl="./knowl/t-conn-def-path.html" knowl-id="xref-t-conn-def-path" alt="Definition 2.1 " title="Definition 2.1 ">2.1</a>. After all, it is the <!--Style me with CSS--><em>image</em> of \(\gamma\) that we would typically call the path. However, the definition as given is ubiquitous in topology. When it is convenient we do abuse terminology and refer indirectly to the image of \(\gamma\) as a path joining \(\gamma(0)\) to \(\gamma(1)\).</p>
+<article class="definition-like" id="t-conn-def-path-connected-space"><h5 class="heading">
+<span class="type">Definition</span><span class="codenumber">2.2</span>
+</h5>
+<p id="p-6">A topological space \(X\) is <!--Style me with CSS--><em>path-connected</em> if, for every pair of points \(p\), \(q \in X\), there is a path \(\gamma \colon [0, 1] \to X\) with \(\gamma(0) = p\) and \(\gamma(1) = q\).</p></article><div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-t-conn-reverse-paths" id="t-conn-reverse-paths"><h5 class="heading">
+<span class="type">Exercise</span> <span class="codenumber">2.3</span>
+</h5></a></div>
+<div id="hk-t-conn-reverse-paths" style="display: none;" class="tex2jax_ignore">
+<article class="exercise-like"><p id="p-7"><a knowl="./knowl/t-conn-def-path-connected-space.html" knowl-id="xref-t-conn-def-path-connected-space" alt="Definition 2.2 " title="Definition 2.2 ">2.2</a> is symmetric in \(p\) and \(q\). That is, whenever there is \(\gamma\) connecting \(p\) and \(q\) as in <a knowl="./knowl/t-conn-def-path-connected-space.html" knowl-id="xref-t-conn-def-path-connected-space" alt="Definition 2.2 " title="Definition 2.2 ">2.2</a>, there is a path \(-\gamma\) such that \(\gamma(0) = q\) and \(\gamma(1) = p\).</p></article><div class="hidden-knowl-wrapper">
+<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-hint-1" id="hint-1"><span class="heading"><span class="type">Hint</span></span></a></span><span id="hk-hint-1" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-8">Give an explicit formula for \(-\gamma\).</p></span></span>
+</div>
+</div>
+<p id="p-9">The next two exercises suggest that this is a good definition. Remember that connectedness is supposed to mean that the space is “all one piece”.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-t-conn-intervals-are-path-connected" id="t-conn-intervals-are-path-connected"><h5 class="heading">
+<span class="type">Exercise</span> <span class="codenumber">2.4</span>
+</h5></a></div>
+<div id="hk-t-conn-intervals-are-path-connected" style="display: none;" class="tex2jax_ignore">
+<article class="exercise-like"><p id="p-10">In the topological space \(\RR_{\mathrm{std}}\), every interval is path-connected.</p></article><div class="hidden-knowl-wrapper"></div>
+</div>
+<p id="p-11">One generalization of the idea of “interval” is the notion of a convex set.</p>
+<article class="definition-like" id="t-conn-def-convex-set"><h5 class="heading">
+<span class="type">Definition</span><span class="codenumber">2.5</span>
+</h5>
+<p id="p-12">A subset \(A\) of \(\RR^n\) is <!--Style me with CSS--><em>convex</em> if for each pair of points \(p\), \(q \in A\), the segment connecting \(p\) and \(q\) is contained in \(A\).</p></article><div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-t-conn-convex-sets-are-path-connected" id="t-conn-convex-sets-are-path-connected"><h5 class="heading">
+<span class="type">Exercise</span> <span class="codenumber">2.6</span>
+</h5></a></div>
+<div id="hk-t-conn-convex-sets-are-path-connected" style="display: none;" class="tex2jax_ignore">
+<article class="exercise-like"><p id="p-13">In \(\RR^2\) with the standard topology, every <!--Style me with CSS--><em>convex</em> set is path-connected.</p></article><div class="hidden-knowl-wrapper"></div>
+</div>
+<p id="p-14">However, there are spaces that seem to meet our informal criterion that are not path-connected in the sense of <a knowl="./knowl/t-conn-def-path-connected-space.html" knowl-id="xref-t-conn-def-path-connected-space" alt="Definition 2.2 " title="Definition 2.2 ">2.2</a>. We need a variant of a definition from elsewhere in the book.</p>
+<article class="definition-like" id="t-conn-def-closed-topologists-sine"><h5 class="heading">
+<span class="type">Definition</span><span class="codenumber">2.7</span>
+</h5>
+<p id="p-15">The <!--Style me with CSS--><em>closed topologists' sine curve</em> is the set <span class="displaymath" id="me-1">\[\left\{ (0, y) : -1 \leq y \leq 1 \right\} \cup \left\{ (x, \sin{\frac{1}{x}}) : 0 \lt x \lt 1 \right\}.\]</span></p></article><div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-t-conn-closed-topologists-sine-not-path-connected" id="t-conn-closed-topologists-sine-not-path-connected"><h5 class="heading">
+<span class="type">Exercise</span> <span class="codenumber">2.8</span>
+</h5></a></div>
+<div id="hk-t-conn-closed-topologists-sine-not-path-connected" style="display: none;" class="tex2jax_ignore">
+<article class="exercise-like"><p id="p-16">The closed topologists' sine curve (<a knowl="./knowl/t-conn-def-closed-topologists-sine.html" knowl-id="xref-t-conn-def-closed-topologists-sine" alt="Definition 2.7 " title="Definition 2.7 ">2.7</a>) is not path-connected.</p></article><div class="hidden-knowl-wrapper"></div>
+</div>
+<p id="p-17">If you disagree that this space is “all one piece”, then tell me: when you draw it, where must you pick up the pencil?</p></section></div></main>
+</div>
+</body>
+</html>
