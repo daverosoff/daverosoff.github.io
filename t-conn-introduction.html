@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--* Generated from MathBook XML source *-->
-<!--*    on 2016-05-01T09:32:26-07:00    *-->
+<!--*    on 2016-05-02T10:07:17-06:00    *-->
 <!--*                                    *-->
 <!--*   http://mathbook.pugetsound.edu   *-->
 <!--*                                    *-->
@@ -54,6 +54,7 @@ $(function () {
 </head>
 <body class="mathbook-article has-toc has-sidebar-left">
 <div xmlns:b64="https://github.com/ilyakharlamov/xslt_base64" style="display:none;">\(\newcommand{\RR}{\mathbf{R}}
+\newcommand{\eps}{\varepsilon}
 \newcommand{\lt}{ &lt; }
 \newcommand{\gt}{ &gt; }
 \newcommand{\amp}{ &amp; }
@@ -85,7 +86,7 @@ $(function () {
 <article class="definition-like" id="t-conn-def-path"><h5 class="heading">
 <span class="type">Definition</span><span class="codenumber">2.1</span>
 </h5>
-<p id="p-4">A <!--Style me with CSS--><em>path</em> in a topological space \(X\) is a piecewise continuous function \(\gamma \colon [0, 1] \to X\).</p></article><p id="p-5">The idea of <a knowl="./knowl/t-conn-def-path.html" knowl-id="xref-t-conn-def-path" alt="Definition 2.1 " title="Definition 2.1 ">2.1</a> is that the points \(\gamma(0)\) and \(\gamma(1)\) are the two endpoints. Since the function \(\gamma\) is continuous, the images \(\gamma(t)\) for \(0 \lt t \lt 1\) link the two endpoints without picking up the pencil. Many reasonable people would object to <a knowl="./knowl/t-conn-def-path.html" knowl-id="xref-t-conn-def-path" alt="Definition 2.1 " title="Definition 2.1 ">2.1</a>. After all, it is the <!--Style me with CSS--><em>image</em> of \(\gamma\) that we would typically call the path. However, the definition as given is ubiquitous in topology. When it is convenient we do abuse terminology and refer indirectly to the image of \(\gamma\) as a path joining \(\gamma(0)\) to \(\gamma(1)\).</p>
+<p id="p-4">A <!--Style me with CSS--><em>path</em> in a topological space \(X\) is a piecewise continuous function \(\gamma \colon [0, 1] \to X\).</p></article><p id="p-5">The idea of <a knowl="./knowl/t-conn-def-path.html" knowl-id="xref-t-conn-def-path" alt="Definition 2.1 " title="Definition 2.1 ">Definition 2.1</a> is that the points \(\gamma(0)\) and \(\gamma(1)\) are the two endpoints. Since the function \(\gamma\) is continuous, the images \(\gamma(t)\) for \(0 \lt t \lt 1\) link the two endpoints without picking up the pencil. Many reasonable people would object to <a knowl="./knowl/t-conn-def-path.html" knowl-id="xref-t-conn-def-path" alt="Definition 2.1 " title="Definition 2.1 ">Definition 2.1</a>. After all, it is the <!--Style me with CSS--><em>image</em> of \(\gamma\) that we would typically call the path. However, the definition as given is ubiquitous in topology. When it is convenient we do abuse terminology and refer indirectly to the image of \(\gamma\) as a path joining \(\gamma(0)\) to \(\gamma(1)\).</p>
 <article class="definition-like" id="t-conn-def-path-connected-space"><h5 class="heading">
 <span class="type">Definition</span><span class="codenumber">2.2</span>
 </h5>
@@ -93,7 +94,7 @@ $(function () {
 <span class="type">Exercise</span> <span class="codenumber">2.3</span>
 </h5></a></div>
 <div id="hk-t-conn-reverse-paths" style="display: none;" class="tex2jax_ignore">
-<article class="exercise-like"><p id="p-7"><a knowl="./knowl/t-conn-def-path-connected-space.html" knowl-id="xref-t-conn-def-path-connected-space" alt="Definition 2.2 " title="Definition 2.2 ">2.2</a> is symmetric in \(p\) and \(q\). That is, whenever there is \(\gamma\) connecting \(p\) and \(q\) as in <a knowl="./knowl/t-conn-def-path-connected-space.html" knowl-id="xref-t-conn-def-path-connected-space" alt="Definition 2.2 " title="Definition 2.2 ">2.2</a>, there is a path \(-\gamma\) such that \(\gamma(0) = q\) and \(\gamma(1) = p\).</p></article><div class="hidden-knowl-wrapper">
+<article class="exercise-like"><p id="p-7"><a knowl="./knowl/t-conn-def-path-connected-space.html" knowl-id="xref-t-conn-def-path-connected-space" alt="Definition 2.2 " title="Definition 2.2 ">Definition 2.2</a> is symmetric in \(p\) and \(q\). That is, whenever there is \(\gamma\) connecting \(p\) and \(q\) as in <a knowl="./knowl/t-conn-def-path-connected-space.html" knowl-id="xref-t-conn-def-path-connected-space" alt="Definition 2.2 " title="Definition 2.2 ">Definition 2.2</a>, there is a path \(-\gamma\) such that \(\gamma(0) = q\) and \(\gamma(1) = p\).</p></article><div class="hidden-knowl-wrapper">
 <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-hint-1" id="hint-1"><span class="heading"><span class="type">Hint</span></span></a></span><span id="hk-hint-1" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-8">Give an explicit formula for \(-\gamma\).</p></span></span>
 </div>
 </div>
@@ -108,23 +109,77 @@ $(function () {
 <article class="definition-like" id="t-conn-def-convex-set"><h5 class="heading">
 <span class="type">Definition</span><span class="codenumber">2.5</span>
 </h5>
-<p id="p-12">A subset \(A\) of \(\RR^n\) is <!--Style me with CSS--><em>convex</em> if for each pair of points \(p\), \(q \in A\), the segment connecting \(p\) and \(q\) is contained in \(A\).</p></article><div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-t-conn-convex-sets-are-path-connected" id="t-conn-convex-sets-are-path-connected"><h5 class="heading">
+<p id="p-12">A subset \(A\) of \(\RR^n\) is <!--Style me with CSS--><em>convex</em> if for each pair of points \(p\), \(q \in A\), the segment connecting \(p\) and \(q\) is contained in \(A\).</p></article><p id="p-13">Recall also that the segment referred to in <a knowl="./knowl/t-conn-def-convex-set.html" knowl-id="xref-t-conn-def-convex-set" alt="Definition 2.5 " title="Definition 2.5 ">Definition 2.5</a> can be parametrized, in the notation of <a knowl="./knowl/t-conn-def-convex-set.html" knowl-id="xref-t-conn-def-convex-set" alt="Definition 2.5 " title="Definition 2.5 ">Definition 2.5</a>, as \(\gamma(t) = p(1-t) + qt\), for \(t \in [0, 1]\).</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-t-conn-convex-sets-are-path-connected" id="t-conn-convex-sets-are-path-connected"><h5 class="heading">
 <span class="type">Exercise</span> <span class="codenumber">2.6</span>
 </h5></a></div>
 <div id="hk-t-conn-convex-sets-are-path-connected" style="display: none;" class="tex2jax_ignore">
-<article class="exercise-like"><p id="p-13">In \(\RR^2\) with the standard topology, every <!--Style me with CSS--><em>convex</em> set is path-connected.</p></article><div class="hidden-knowl-wrapper"></div>
+<article class="exercise-like"><p id="p-14">In \(\RR^2\) with the standard topology, every <!--Style me with CSS--><em>convex</em> set is path-connected.</p></article><div class="hidden-knowl-wrapper"></div>
 </div>
-<p id="p-14">However, there are spaces that seem to meet our informal criterion that are not path-connected in the sense of <a knowl="./knowl/t-conn-def-path-connected-space.html" knowl-id="xref-t-conn-def-path-connected-space" alt="Definition 2.2 " title="Definition 2.2 ">2.2</a>. We need a variant of a definition from elsewhere in the book.</p>
+<p id="p-15">However, there are spaces that seem to meet our informal criterion that are not path-connected in the sense of <a knowl="./knowl/t-conn-def-path-connected-space.html" knowl-id="xref-t-conn-def-path-connected-space" alt="Definition 2.2 " title="Definition 2.2 ">Definition 2.2</a>. We need a variant of a definition from elsewhere in the book.</p>
 <article class="definition-like" id="t-conn-def-closed-topologists-sine"><h5 class="heading">
 <span class="type">Definition</span><span class="codenumber">2.7</span>
 </h5>
-<p id="p-15">The <!--Style me with CSS--><em>closed topologists' sine curve</em> is the set <span class="displaymath" id="me-1">\[\left\{ (0, y) : -1 \leq y \leq 1 \right\} \cup \left\{ (x, \sin{\frac{1}{x}}) : 0 \lt x \lt 1 \right\}.\]</span></p></article><div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-t-conn-closed-topologists-sine-not-path-connected" id="t-conn-closed-topologists-sine-not-path-connected"><h5 class="heading">
+<p id="p-16">The <!--Style me with CSS--><em>closed topologists' sine curve</em> is the set <span class="displaymath" id="me-1">\[\left\{ (0, y) : -1 \leq y \leq 1 \right\} \cup \left\{ (x, \sin{\frac{1}{x}}) : 0 \lt x \lt 1 \right\}.\]</span></p></article><div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-t-conn-closed-topologists-sine-not-path-connected" id="t-conn-closed-topologists-sine-not-path-connected"><h5 class="heading">
 <span class="type">Exercise</span> <span class="codenumber">2.8</span>
 </h5></a></div>
 <div id="hk-t-conn-closed-topologists-sine-not-path-connected" style="display: none;" class="tex2jax_ignore">
-<article class="exercise-like"><p id="p-16">The closed topologists' sine curve (<a knowl="./knowl/t-conn-def-closed-topologists-sine.html" knowl-id="xref-t-conn-def-closed-topologists-sine" alt="Definition 2.7 " title="Definition 2.7 ">2.7</a>) is not path-connected.</p></article><div class="hidden-knowl-wrapper"></div>
+<article class="exercise-like"><p id="p-17">The closed topologists' sine curve (<a knowl="./knowl/t-conn-def-closed-topologists-sine.html" knowl-id="xref-t-conn-def-closed-topologists-sine" alt="Definition 2.7 " title="Definition 2.7 ">Definition 2.7</a>) is not path-connected.</p></article><div class="hidden-knowl-wrapper"></div>
 </div>
-<p id="p-17">If you disagree that this space is “all one piece”, then tell me: when you draw it, where must you pick up the pencil?</p></section></div></main>
+<p id="p-18">If you disagree that this space is “all one piece”, then tell me: when you draw it, where must you pick up the pencil?</p>
+<p id="p-19">Now that you have thought about <a knowl="./knowl/t-conn-closed-topologists-sine-not-path-connected.html" knowl-id="xref-t-conn-closed-topologists-sine-not-path-connected" alt="Exercise 2.8 " title="Exercise 2.8 ">Exercise 2.8</a> for a while, let me ask you not to try to continue to prove it. To prove it, we actually will need to use the more fundamental notion of <!--Style me with CSS--><em>connectedness</em>.</p>
+<article class="definition-like" id="t-conn-def-connected-space"><h5 class="heading">
+<span class="type">Definition</span><span class="codenumber">2.9</span>
+</h5>
+<p id="p-20">A topological space \(X\) is <!--Style me with CSS--><em>connected</em> if no proper subset of \(X\) is both open and closed.</p></article><article class="theorem-like" id="t-conn-recognize-disconnected"><h5 class="heading">
+<span class="type">Lemma</span><span class="codenumber">2.10</span>
+</h5>
+<p id="p-21">Let \(X\) be a space. Then \(X\)is not connected if and only if it is possible to find open subsets \(U\) and \(V\) of \(X\) such that</p>
+<ol style="list-style-type: decimal;">
+<li id="li-1">\(U \cap V = \varnothing\)</li>
+<li id="li-2">\(U \cup V = X\)</li>
+<li id="li-3">Neither of \(U\) and \(V\) is empty.</li>
+</ol>
+<p id="p-22">Such a pair of open sets is sometimes called a <!--Style me with CSS--><em>separation</em> of \(X\).</p></article><article class="definition-like" id="t-conn-def-connected-set"><h5 class="heading">
+<span class="type">Definition</span><span class="codenumber">2.11</span>
+</h5>
+<p id="p-23">A subset \(A\) of the topological space X is connected if A is connected in the sense of <a knowl="./knowl/t-conn-def-connected-space.html" knowl-id="xref-t-conn-def-connected-space" alt="Definition 2.9 " title="Definition 2.9 ">Definition 2.9</a> when given the subspace topology.</p></article><article class="theorem-like" id="t-conn-closure-of-connected"><h5 class="heading">
+<span class="type">Theorem</span><span class="codenumber">2.12</span>
+</h5>
+<p id="p-24">If \(X\) is a topological space and \(A\) is a connected subset, then \(\overline{A}\) is also connected.</p></article><p id="p-25">The first definition, <a knowl="./knowl/t-conn-def-path-connected-space.html" knowl-id="xref-t-conn-def-path-connected-space" alt="Definition 2.2 " title="Definition 2.2 ">Definition 2.2</a>, is more intuitive, but <a knowl="./knowl/t-conn-def-connected-space.html" knowl-id="xref-t-conn-def-connected-space" alt="Definition 2.9 " title="Definition 2.9 ">Definition 2.9</a>, is more general. It therefore can capture spaces like the topologists' sine curve (<a knowl="./knowl/t-conn-def-closed-topologists-sine.html" knowl-id="xref-t-conn-def-closed-topologists-sine" alt="Definition 2.7 " title="Definition 2.7 ">Definition 2.7</a>). Let's worry about this exotic (some would say “pathological”) example later, and focus on the familiar for now.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-t-conn-empty-is-connected" id="t-conn-empty-is-connected"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">2.13</span>
+</h5></article></a></div>
+<div id="hk-t-conn-empty-is-connected" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-26">The empty set is a connected subset of every topological space.</p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-t-conn-r-is-connected" id="t-conn-r-is-connected"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">2.14</span>
+</h5></article></a></div>
+<div id="hk-t-conn-r-is-connected" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-27">\(\RR\) (with the standard topology) is connected.</p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-t-conn-intervals-are-connected" id="t-conn-intervals-are-connected"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">2.15</span>
+</h5></article></a></div>
+<div id="hk-t-conn-intervals-are-connected" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-28">Let \(a \lt b\). Then each of the intervals below is a connected subset of \(\RR\).</p>
+<ol style="list-style-type: decimal;">
+<li id="li-4">The open interval \((a, b)\)</li>
+<li id="li-5">The closed interval \([a, b]\)</li>
+<li id="li-6">The half-open interval \((a, b]\)</li>
+<li id="li-7">The half-open interval \([a, b)\)</li>
+</ol></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-t-conn-euclidean-balls-are-connected" id="t-conn-euclidean-balls-are-connected"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">2.16</span>
+</h5></article></a></div>
+<div id="hk-t-conn-euclidean-balls-are-connected" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-29">Every open ball \(B(p, \eps) \subseteq \RR^n\) is connected.</p></article></div>
+<p id="p-30">The proof of the main theorem of this section, <a knowl="./knowl/t-conn-continuous-image-of-connected.html" knowl-id="xref-t-conn-continuous-image-of-connected" alt="Theorem 2.19 " title="Theorem 2.19 ">Theorem 2.19</a>, will follow quickly from the conceptually illuminating <a knowl="./knowl/t-conn-no-surjective-map-into-0-sphere.html" knowl-id="xref-t-conn-no-surjective-map-into-0-sphere" alt="Lemma 2.18 " title="Lemma 2.18 ">Lemma 2.18</a> below. The statement of <a knowl="./knowl/t-conn-no-surjective-map-into-0-sphere.html" knowl-id="xref-t-conn-no-surjective-map-into-0-sphere" alt="Lemma 2.18 " title="Lemma 2.18 ">Lemma 2.18</a> and the organization of our discussion around it are due to Martin Crossley's book <!--Style me with CSS--><em>Essential Topology</em>. (I will provide a proper citation at a later time.) First we need a short definition.</p>
+<article class="definition-like" id="t-conn-0-sphere"><h5 class="heading">
+<span class="type">Definition</span><span class="codenumber">2.17</span>
+</h5>
+<p id="p-31">The <!--Style me with CSS--><em>0-sphere</em> \(S^0\) is the subset \(\{-1, 1\}\) of \(\RR\) given the subspace topology.</p></article><article class="theorem-like" id="t-conn-no-surjective-map-into-0-sphere"><h5 class="heading">
+<span class="type">Lemma</span><span class="codenumber">2.18</span>
+</h5>
+<p id="p-32">Let \(X\) be a connected topological space. Then there is no continuous surjective map from \(X\) to \(S^0\).</p></article><article class="theorem-like" id="t-conn-continuous-image-of-connected"><h5 class="heading">
+<span class="type">Theorem</span><span class="codenumber">2.19</span>
+</h5>
+<p id="p-33">Let \(X\) and \(Y\) be spaces, let \(X\) be connected, and let \(f \colon X \to Y\) be a continuous function. Then the image of \(f\) is connected.</p></article><p id="p-34"></p></section></div></main>
 </div>
 </body>
 </html>
