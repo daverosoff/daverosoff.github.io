@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2018-01-08T15:17:36-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Intervals and Inequalities</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML-full"></script><script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content">\(\require{cancel}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href="" target="_blank"><img src="images/seal.jpg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="index.html"><span class="title">Survey of Algebra and Probability</span><span class="subtitle">MAT 101</span></a></h1>
+<p class="byline">Robin Cruz, Lynda Danielson, Katherine Yoshiwara</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-2A-equations-and-absolute-value.html" title="Previous" alt="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-2-equations-intervals-inequalities.html" title="Up" alt="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-2C-applications.html" title="Next" alt="Next">Next</a></span></div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-2A-equations-and-absolute-value.html" title="Previous" alt="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-2-equations-intervals-inequalities.html" title="Up" alt="Up">Up</a><a class="next-button button toolbar-item" href="section-2C-applications.html" title="Next" alt="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></h2>
+<h2 class="link"><a href="chapter-0-preliminaries.html" data-scroll="chapter-0-preliminaries"><span class="codenumber">0</span><span class="title">Preliminaries</span></a></h2>
+<ul><li><a href="section-00-preliminaries.html" data-scroll="section-00-preliminaries">Preliminaries</a></li></ul>
+<h2 class="link"><a href="chapter-1-numbers.html" data-scroll="chapter-1-numbers"><span class="codenumber">1</span><span class="title">Numbers</span></a></h2>
+<ul>
+<li><a href="section-1A-fractions.html" data-scroll="section-1A-fractions">Fractions</a></li>
+<li><a href="section-1B-percents-and-estimation.html" data-scroll="section-1B-percents-and-estimation">Percents and Estimation</a></li>
+<li><a href="section-1C-exponents-and-scientific-notation.html" data-scroll="section-1C-exponents-and-scientific-notation">Exponents and Scientific Notation</a></li>
+</ul>
+<h2 class="link active"><a href="chapter-2-equations-intervals-inequalities.html" data-scroll="chapter-2-equations-intervals-inequalities"><span class="codenumber">2</span><span class="title">Equations, Intervals, and Inequalities</span></a></h2>
+<ul>
+<li><a href="section-2A-equations-and-absolute-value.html" data-scroll="section-2A-equations-and-absolute-value">Equations and Absolute Value</a></li>
+<li><a href="section-2B-intervals-and-inequalities.html" data-scroll="section-2B-intervals-and-inequalities" class="active">Intervals and Inequalities</a></li>
+<li><a href="section-2C-applications.html" data-scroll="section-2C-applications">Applications</a></li>
+</ul>
+<h2 class="link"><a href="chapter-3-graphs.html" data-scroll="chapter-3-graphs"><span class="codenumber">3</span><span class="title">Graphs</span></a></h2>
+<ul>
+<li><a href="section-3A-graphs.html" data-scroll="section-3A-graphs">Interpreting Graphs</a></li>
+<li><a href="section-3B-lines.html" data-scroll="section-3B-lines">Lines</a></li>
+<li><a href="section-3C-linear-models.html" data-scroll="section-3C-linear-models">Linear Models</a></li>
+</ul>
+<h2 class="link"><a href="chapter-4-sets-and-probability.html" data-scroll="chapter-4-sets-and-probability"><span class="codenumber">4</span><span class="title">Sets and Probability</span></a></h2>
+<ul>
+<li><a href="section-4A-sets-and-counting.html" data-scroll="section-4A-sets-and-counting">Sets and Counting</a></li>
+<li><a href="section-4B-probability.html" data-scroll="section-4B-probability">Probability</a></li>
+<li><a href="section-4C-probability-rules.html" data-scroll="section-4C-probability-rules">Probability Rules</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-2B-intervals-and-inequalities"><h2 class="heading hide-type" alt="Section 2.B Intervals and Inequalities">
+<span class="type">Section</span><span class="codenumber">2.B</span><span class="title">Intervals and Inequalities</span>
+</h2>
+<a href="section-2B-intervals-and-inequalities.html" class="permalink">¶</a><section class="introduction" id="introduction-6"><p id="p-361"></p>
+<ul id="ul-10" style="list-style-type: disc;">
+<li id="li-36">Use inequality and interval notation.</li>
+<li id="li-37">Solve linear inequalities.</li>
+<li id="li-38">Solve, graph and give interval notation for the solution to inequalities with absolute values.</li>
+<li id="li-39">Solve linear distance inequality problems.</li>
+</ul></section><section class="subsection" id="subsection-25"><h3 class="heading hide-type" alt="Subsection 2.B.1 Intervals and Inequalities">
+<span class="type">Subsection</span><span class="codenumber">2.B.1</span><span class="title">Intervals and Inequalities</span>
+</h3>
+<p id="p-362">When we solve an equation we find a single value for our variable. With inequalities we will give a range of values for our variable. To do this we will not use an equals sign, but one of the following symbols:</p>
+\begin{align*}
+\gt \amp\amp\amp \text{Greater than}\\
+\geq \amp\amp\amp \text{Greater than or equal to}\\
+\lt \amp\amp\amp \text{Less than}\\
+\leq \amp\amp\amp \text{Less than or equal to}
+\end{align*}
+<article class="assemblage-like" id="assemblage-13"><h6 class="heading"><span class="title">WeBWorK: Entering Inequality Symbols</span></h6>
+<p id="p-363">Type the two symbols together:</p>
+<p id="p-364"><code class="code-inline tex2jax_ignore">&gt;=
+        </code>for \(\geq\) (greater than or equal to)</p>
+<p id="p-365"><code class="code-inline tex2jax_ignore">&lt;=
+        </code> for \(\leq\) (greater than or equal to)</p></article><p id="p-366">The expression \(x \lt 4\) this means our variable \(x\) can be any number smaller than \(4\) such as \(-2, 0, 3, 3.9\) or even \(3.999999999\) as long as it is smaller than \(4\text{.}\) In other words, \(x \lt 4\) is the set of all numbers less than \(4\text{.}\) <b><i>4 is NOT less than 4</i></b>.  We write \(4\nless 4\text{.}\)  However \(4\) IS less than or equal to \(4\text{.}\)  We write \(4\leq 4\text{.}\)</p>
+<p id="p-367">The expression \(y \geq -2,\) means that the variable \(y\) can be any number greater than or equal to \(-2,\) such as \(5, 0,-1,-1.9999,\) or even \(-2\text{.}\) In other words, \(x \geq -2\) is the set of all numbers greater than or equal to \(-2\text{.}\)</p>
+<p id="p-368">It is often useful to draw a picture of the solutions to the inequality on a number line. We will start from the value in the problem and bold the lower part of the number line if the variable is smaller than the number, and bold the upper part of the number line if the variable is larger. The value itself we will mark with an open or closed circle: open for less than or greater than, and a closed circle for less than or equal to or greater than or equal to.</p>
+<p id="p-369">Once the graph is drawn we can quickly convert the graph into what is called <b class="terminology">interval notation</b>. Interval notation gives two numbers, the first is the smallest value (furthest left on the number line), the second is the largest value (furthest right on the number line). We will use square brackets if the inequality includes <em class="emphasis">or equal to</em> (so either \(\leq\) or \(\geq\)).  We will use round brackets if the inequality is strictly less than or greater than (so either \(\lt\) or \(\gt\)).   If there is no largest value, we can use \(\infty\) (infinity). If there is no smallest value, we can use \(-\infty\) (negative infinity). If we use either positive or negative infinity we will always use a round bracket by the symbol.</p>
+<article class="example-like" id="example-118"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">2.B.1</span><span class="title">Relating an Inequality, Graph and Interval</span>
+</h6>
+<p id="p-370">Graph the inequality \(x\geq 4\) and give the interval notation.</p>
+<div class="sidebyside" id="sidebyside-20"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
+<div class="sbspanel" style="width:56.4102564102564%;justify-content:center;"><img src="images/interval-x-geq-4.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div>
+<div class="sbspanel" style="width:41.025641025641%;justify-content:center;">
+<p id="p-371">Start at \(4\) and shade to the right. Use a closed circle for greater than or equal to.</p>
+<p id="p-372">Our Graph\(\checkmark\)</p>
+<p id="p-373">Interval notation: \([4,\infty ) \checkmark\)</p>
+</div>
+</div></div></article><article class="assemblage-like" id="assemblage-14"><h6 class="heading"><span class="title">WeBWorK: Entering Intervals</span></h6>
+<p id="p-374">Type <code class="code-inline tex2jax_ignore">[4,inf)</code> for the interval \([4,\infty )\text{.}\)</p></article><article class="example-like" id="example-119"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">2.B.2</span><span class="title">Relating an Inequality, Graph and Interval</span>
+</h6>
+<p id="p-375">Graph the inequality \(x\lt -4\) and give the interval notation.</p>
+<div class="sidebyside" id="sidebyside-21"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
+<div class="sbspanel" style="width:56.4102564102564%;justify-content:center;"><img src="images/interval-x-lt-neg4.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div>
+<div class="sbspanel" style="width:41.025641025641%;justify-content:center;">
+<p id="p-376">Start at \(-4\) and shade to the left. Use an open circle for less than.</p>
+<p id="p-377">Our Graph\(\checkmark\)</p>
+<p id="p-378">Interval notation: \((-\infty, -4) \checkmark\)</p>
+</div>
+</div></div></article><article class="assemblage-like" id="assemblage-15"><h6 class="heading"><span class="title">WeBWorK: Entering an Infinity Symbol</span></h6>
+<p id="p-379">Type <code class="code-inline tex2jax_ignore">(-inf,-4)</code> for the interval \((-\infty, -4)\text{.}\)</p></article><article class="example-like" id="example-120"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">2.B.3</span><span class="title">Relating an Inequality, Graph and Interval</span>
+</h6>
+<p id="p-380">Graph the inequality \(-3\lt x \lt 1\) and give the interval notation.</p>
+<div class="sidebyside" id="sidebyside-22"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
+<div class="sbspanel" style="width:56.4102564102564%;justify-content:center;"><img src="images/interval-neg3-lt-x-lt-1.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div>
+<div class="sbspanel" style="width:41.025641025641%;justify-content:center;">
+<p id="p-381">Start at \(-3\) and shade to the right to \(1\text{.}\) Use open circles on both ends for less than.</p>
+<p id="p-382">Our Graph\(\checkmark\)</p>
+<p id="p-383">Interval notation: \((-3, -1) \checkmark\)</p>
+</div>
+</div></div></article></section><section class="subsection" id="subsection-26"><h3 class="heading hide-type" alt="Subsection 2.B.2 Linear Inequalities">
+<span class="type">Subsection</span><span class="codenumber">2.B.2</span><span class="title">Linear Inequalities</span>
+</h3>
+<p id="p-384">Solving inequalities is very similar to solving equations with one exception. Consider the following inequality and notice what happens to the inequality sign as we add, subtract, multiply and divide by both positive and negative numbers to keep the statement a true statement.</p>
+<p id="p-385"></p>
+\begin{align*}
+\text{Start with the true statement }5\amp\gt 1 \amp\amp \text{Add \(3\) to both sides}\\
+\text{We now have }8\amp\gt 4 \amp\amp \text{This is still true.  Now subtract \(2\) from both sides}\\
+\text{We now have }6\amp\gt 2 \amp\amp \text{This is still true.  Next multiply both sides by \(3\)}\\
+\text{We now have }18\amp\gt 6 \amp\amp \text{This is still true.  Now divide both sides by \(2\)}\\
+\text{We now have }9\amp\gt 3 \amp\amp \text{This is still true.  Next add \(-1\) to both sides}\\
+\text{We now have }8\amp\gt 2 \amp\amp \text{This is still true.  Next multiply both sides by \(-1\)}\\
+\text{We now have }-8\amp\color{red}{\lt}\color{black}{}-2 \amp\amp \text{Notice the inequality sign changed direction}\\
+\amp\amp\amp\text{to keep this true!}
+\end{align*}
+<p>Why did the inequality sign change direction when we multiplied by \(-1\text{?}\)  Let's rewrite this expression using subtraction instead of multiplication. Start again with \(8\gt 2\text{.}\) Subtract \(8\) then \(2\) from both sides, but don't simplify:</p>
+\begin{align*}
+8\amp\gt 2\\
+\overline{-8}\amp \overline{\phantom{1}-8}\\
+0\amp\gt 2-8\\
+\overline{-2}\amp \overline{\phantom{1}-2}\\
+-2\amp \gt -8
+\end{align*}
+<p>Note the inequality opens up towards the \(-2\text{.}\) Rewriting the order, we have</p>
+\begin{gather*}
+-8 \lt -2
+\end{gather*}
+<p>We have the two inequalities:</p>
+\begin{align*}
+8\amp\gt 2\\
+-8\amp\lt -2
+\end{align*}
+<p>The second is the first multiplied by \(-1\text{.}\) Thus, multiplying by a negative changes the direction of the inequality sign.</p>
+\begin{align*}
+\text{Continue with }-8\amp\lt -2 \amp\amp \text{Now divide both sides by \(-2\)}\\
+\text{We now have }4\amp\color{red}{\gt}\color{black}{}1 \amp\amp \text{Notice the inequality sign changed direction}\\
+\amp\amp\amp\text{again to keep this true!}
+\end{align*}
+<p id="p-386">As the above problem illustrates, we can add, subtract, multiply, or divide on both sides of the inequality. But if we multiply or divide by a negative number, the symbol will need to "flip" directions. We will keep that in mind as we solve inequalities.</p>
+<article class="example-like" id="example-121"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">2.B.4</span><span class="title">Solve an Inequality</span>
+</h6>
+<p id="p-387">Solve and give the interval notation.</p>
+\begin{align*}
+5-2x\amp\geq 11 \amp\amp \text{Subtract \(5\) from both sides}\\
+\underline{-5\phantom{1234}}\amp\underline{\phantom{1}-5} \amp\amp \,\\
+-2x\amp\geq 6 \amp\amp \text{Divide both sides by \(-2\)}\\
+\overline{-2}\amp\phantom{12}\overline{-2} \amp\amp \text{Divide by a negative: flip inequality sign!}\\
+x\amp\color{red}{\leq}\color{black}{}-3 \amp\amp \text{Graph, starting at \(-3\), going left with a solid circle for less than or equal to}
+\end{align*}
+<div class="sidebyside" id="sidebyside-23"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
+<div class="sbspanel" style="width:56.4102564102564%;justify-content:center;"><img src="images/inequality-solution-x-leq-neg3.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div>
+<div class="sbspanel" style="width:41.025641025641%;justify-content:center;">
+<p id="p-388">Our Graph\(\checkmark\)</p>
+<p id="p-389">Interval notation: \((-\infty, -3] \checkmark\)</p>
+</div>
+</div></div></article><p id="p-390">The inequality we solve can get as complex as the linear equations we solved. We will use all the same patterns to solve these inequalities as we did for solving equations. Just remember that any time we multiply or divide by a negative number the inequality symbol switches directions (multiplying or dividing by a positive does not change the symbol!)</p>
+<article class="example-like" id="example-122"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">2.B.5</span><span class="title">Solve an Inequality</span>
+</h6>
+<p id="p-391">Solve and give the interval notation.</p>
+\begin{align*}
+3(2x-4)+4x\amp\lt 4(3x-7)+8 \amp\amp \text{Distribute}\\
+6x-12+4x\amp\lt 12x-28+8 \amp\amp \text{Combine like terms}\\
+10x-12\amp\lt 12x-20 \amp\amp \text{"Move" variable to one side}\\
+\underline{-10x\phantom{1234}}\amp\underline{\phantom{1}-10x} \amp\amp \text{Subtract \(10x\) from both sides}\\
+-12\amp\lt 2x-20 \amp\amp \text{Isolate variable on \textbf{RHS}}\\
+\underline{+20}\amp\underline{\phantom{12345}+20} \amp\amp \text{Add \(20\) to both sides}\\
+8\amp\lt 2x \amp\amp \text{Divide both sides by \(2\)}\\
+\overline{2}\amp\phantom{123}\overline{2}\amp\amp \text{Divide by a positive: DON'T flip inequality sign!}\\
+4\amp\lt x \amp\amp \text{Be careful with graph, \(x\) is larger!}
+\end{align*}
+<div class="sidebyside" id="sidebyside-24"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
+<div class="sbspanel" style="width:56.4102564102564%;justify-content:center;"><img src="images/inequality-solution-x-gt-4.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div>
+<div class="sbspanel" style="width:41.025641025641%;justify-content:center;">
+<p id="p-392">Our Graph\(\checkmark\)</p>
+<p id="p-393">Interval notation: \((4, \infty)\checkmark\)</p>
+</div>
+</div></div></article><p id="p-394">It is important to be careful when the inequality is written backwards as in the previous example ( \(4 \lt x\) rather than \(x \gt 4\)). The inequality symbol opens to the variable, this means the variable is greater than \(4\text{.}\) So we must shade to the right of \(4\text{.}\)</p></section><section class="subsection" id="subsection-27"><h3 class="heading hide-type" alt="Subsection 2.B.3 Compound Inequalities">
+<span class="type">Subsection</span><span class="codenumber">2.B.3</span><span class="title">Compound Inequalities</span>
+</h3>
+<p id="p-395">Several inequalities can be combined together to form what are called compound inequalities. We will consider one type of compound inequality in this lesson.</p>
+<article class="example-like" id="example-123"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">2.B.6</span><span class="title">Three-part Compound Inequality</span>
+</h6>
+<p id="p-396">Solve the compound inequality, graph the solution, and express it in both inequality and interval notation.</p>
+<div class="sidebyside" id="sidebyside-25"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
+<div class="sbspanel" style="width:41.025641025641%;justify-content:center;">
+<p id="p-397">\(-4\leq 2x-4 \lt 2\)</p>
+<p id="p-398">The inequality requires the expression \(\color{blue}{2x-4}\) to lie in the interval \([-4,2)\)</p>
+</div>
+<div class="sbspanel" style="width:56.4102564102564%;justify-content:center;"><img src="images/inequality-solution-neg4-leq-2x-4-lt-2.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div>
+</div></div>
+<p id="p-399"></p>
+\begin{align*}
+-4\leq 2x-4 \lt 2 \amp\amp\amp \text{Add \(4\) to all three parts of the compound inequality}\\
+\underline{+4\phantom{1234}+4\phantom{1}+4} \amp\amp\amp \,\\
+0\leq 2x \lt 6 \amp\amp\amp \text{Divide all three parts by \(2\)}\\
+\overline{ 2 }\phantom{123}\overline{ 2 }\phantom{1234}\overline{ 2 } \amp\amp\amp \,
+\end{align*}
+<div class="sidebyside" id="sidebyside-26"><div class="sbsrow" style="margin-left:0.833333333333333%;margin-right:0.833333333333333%;">
+<div class="sbspanel" style="width:20.3389830508475%;justify-content:center;"><p id="p-400"></p></div>
+<div class="sbspanel" style="width:20.3389830508475%;justify-content:center;"><p id="p-401">\(0\leq \color{red}{x} \lt 3\)</p></div>
+<div class="sbspanel" style="width:55.9322033898305%;justify-content:center;"><img src="images/inequality-solution-zero-leq-x-lt-3.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div>
+</div></div>
+<p id="p-402"></p>
+\begin{align*}
+0\leq x \lt 3 \amp\amp\amp \text{Our Solution: Inequality Notation}\checkmark\\
+[0,3) \amp\amp\amp \text{Our Solution: Interval Notation}\checkmark
+\end{align*}
+</article><article class="example-like" id="example-124"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">2.B.7</span><span class="title">Three-part Compound Inequality (Negative Coefficient)</span>
+</h6>
+<p id="p-403">Solve the compound inequality, graph the solution, and express it in both inequality and interval notation.</p>
+<div class="sidebyside" id="sidebyside-27"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
+<div class="sbspanel" style="width:41.025641025641%;justify-content:center;">
+<p id="p-404">\(-3\lt 7-2x \leq -1\)</p>
+<p id="p-405">The inequality requires the expression \(\color{blue}{7-2x}\) to lie in the interval \((-3,-1]\)</p>
+</div>
+<div class="sbspanel" style="width:56.4102564102564%;justify-content:center;"><img src="images/inequality-solution-neg3-leq-7-2x-lt-neg1.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div>
+</div></div>
+<p id="p-406"></p>
+\begin{align*}
+-3\lt 7-2x \leq -1 \amp\amp\amp \text{Subtract \(7\) from all three parts of the compound inequality}\\
+\underline{-7\phantom{1}-7\phantom{1234}-7} \amp\amp\amp \,\\
+-10\lt -2x \leq -8 \amp\amp\amp \text{Divide all three parts by \(-2\):
+FLIP SIGNS}\\
+\overline{ -2 }\phantom{123}\overline{ -2 }\phantom{1234}\overline{ -2 } \amp\amp\amp \,
+\end{align*}
+<div class="sidebyside" id="sidebyside-28"><div class="sbsrow" style="margin-left:0.833333333333333%;margin-right:0.833333333333333%;">
+<div class="sbspanel" style="width:20.3389830508475%;justify-content:center;"><p id="p-407"></p></div>
+<div class="sbspanel" style="width:20.3389830508475%;justify-content:center;"><p id="p-408">\(5\gt \color{red}{x}\geq 4\)</p></div>
+<div class="sbspanel" style="width:55.9322033898305%;justify-content:center;"><img src="images/inequality-solution-4-leq-x-lt-5.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div>
+</div></div>
+<p id="p-409"></p>
+\begin{align*}
+4\leq x \lt 5 \amp\amp\amp \text{Our Solution: Inequality Notation}\checkmark\\
+[4,5) \amp\amp\amp \text{Our Solution: Interval Notation}\checkmark
+\end{align*}
+</article></section><section class="subsection" id="subsection-28"><h3 class="heading hide-type" alt="Subsection 2.B.4 Absolute Value Inequalities">
+<span class="type">Subsection</span><span class="codenumber">2.B.4</span><span class="title">Absolute Value Inequalities</span>
+</h3>
+<p id="p-410">We now turn our attention to absolute value inequalities.  Inequalities involving absolute values are used in statistics and other fiields.  Consider</p>
+\begin{gather*}
+\lvert x \rvert \lt 2.
+\end{gather*}
+<p id="p-411">Absolute value is defined as distance from zero. This inequality may be interpreted as all values which are <b class="terminology">less</b> than \(2\) units from zero. On the number line, shown below, all values <b class="terminology">less than</b> \(2\) units away from zero are indicated.</p>
+<div class="sidebyside" id="sidebyside-29"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/absolute-value-x-lt-2.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div>
+<p id="p-412">This graph looks just like the graphs of the three part compound inequalities! When the absolute value is less than a positive number we will determine the solutions to the inequality by changing the problem to a three-part inequality, with the negative value on the "lesser than end" and the positive value on the "greater than end":</p>
+\begin{gather*}
+\lvert x\rvert  \lt 2 \text{ is equivalent to  } \color{blue}{-2 \lt x \lt 2}
+\end{gather*}
+<p>as the graph above illustrates.</p>
+<p id="p-413">Now consider</p>
+\begin{gather*}
+\lvert x\rvert \gt 2.
+\end{gather*}
+<p id="p-414">Keep in mind, absolute value is defined as distance from zero. This inequality represents the values which are <b class="terminology">greater</b> than \(2\) units away from zero. On the number line below we shade all points that are <b class="terminology">more than</b> \(2\) units away from zero.</p>
+<div class="sidebyside" id="sidebyside-30"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/absolute-value-x-gt-2.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div>
+<p id="p-415">When the absolute value is greater than a positive number we find the solution by rewriting the absolute value inequality as two inequalities.  The first inequality is used to determine the solutions greater than the positive number, the second inequality yields the solutions which are less than the negative of the number:</p>
+\begin{gather*}
+\lvert x\rvert  \gt 2 \text{ is equivalent to  } \color{blue}{x\gt 2} \text{ or }\color{red}{ x \lt -2}
+\end{gather*}
+<p>as the graph above illustrates.</p>
+<p id="p-416">The solution to an absolute value inequality may also be expressed in interval notation.  There is a special symbol to represent the "OR" when two intervals are required.  It's called the <b class="terminology">union</b>: \(\cup.\) We will learn more about unions in <a href="section-4A-sets-and-counting.html" class="xref" alt="Section 4.A Sets and Counting" title="Section 4.A Sets and Counting">Section 4.A</a>.</p>
+<article class="assemblage-like" id="assemblage-16"><h6 class="heading"><span class="title">WeBWorK: Entering Two Inequalities or Two Intervals</span></h6>
+<p id="p-417">For \(x \lt -2 \text{ or } x \gt 2\text{:}\)</p>
+<p id="p-418">For inequality notation type <code class="code-inline tex2jax_ignore">x &lt; -2 or  x &gt; 2</code></p>
+<p id="p-419">Be sure to include the word "or" between the solutions.</p>
+<p id="p-420">For interval notation, the upper case "U" means that values from either interval are solutions: <code class="code-inline tex2jax_ignore">(-inf, -2) U (2, inf)</code>.</p></article><p id="p-421">We can solve absolute value inequalities much like we solved absolute value equations.</p>
+<article class="aside-like" id="aside-3"><p id="p-422">To solve an absolute value inequality: </p>
+<ol id="ol-4" style="list-style-type: decimal;">
+<li id="li-40">
+<p id="p-423">"Remove" the absolute value </p>
+<ul id="ul-11" style="list-style-type: disc;">
+<li id="li-41">If \(\lvert \text{expression}\rvert \lt p\) is <b class="terminology">less than a positive number</b> make a three part inequality: \(-p\lt \text{expression}\lt p\)</li>
+<li id="li-42">If \(\lvert \text{expression}\rvert \gt p\) is <b class="terminology">greater than a positive number</b> make an OR inequality: \(\text{expression}\lt -p\) or \(\text{expression}\gt p\)</li>
+</ul>
+</li>
+<li id="li-43">
+<p id="p-424">Solve the inequalities </p>
+<ul id="ul-12" style="list-style-type: disc;"><li id="li-44">
+<b class="terminology">Important:</b> if we multiply or divide by a negative number the inequality symbol will switch directions!</li></ul>
+</li>
+</ol></article><article class="example-like" id="example-125"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">2.B.8</span><span class="title">Absolute Value Inequality: Less than</span>
+</h6>
+<p id="p-425">Solve, graph, and give interval notation for the solution.</p>
+\begin{align*}
+\lvert x-2\rvert \color{red}{\lt} 3 \amp\amp\amp \text{Absolute value is less, use three part inequality}\\
+-3 \lt x-2\lt 3 \amp\amp\amp \text{Add 2 to all three parts}\\
+\underline{+2\phantom{12345}+2\phantom{1}+2} \amp\amp\amp \,\\
+-1 \lt x \lt 5 \amp\amp\amp \text{Graph}
+\end{align*}
+<div class="sidebyside" id="sidebyside-31"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
+<div class="sbspanel" style="width:56.4102564102564%;justify-content:center;"><img src="images/absolute-value-neg1-lt-x-lt-5.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div>
+<div class="sbspanel" style="width:41.025641025641%;justify-content:center;">
+<p id="p-426">Our Graph \(\checkmark\)</p>
+<p id="p-427">Interval notation: \((-1,5)\checkmark\)</p>
+</div>
+</div></div>
+<p id="p-428">Note that the values described in the absolute value inequality \(\lvert x-2\rvert \color{red}{\lt} 3\) are all the values which are within \(3\) units of \(2.\)</p></article><article class="example-like" id="example-126"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">2.B.9</span><span class="title">Distance (Three-Part Inequality)</span>
+</h6>
+<p id="p-429">Suppose the distance between \(x\) and zero is less than or equal to \(6\text{.}\) Determine \(x.\)</p>
+<p id="p-430">Start by translating the words into an equation.  We will need to translate <b class="terminology">distance</b> into absolute value. We are given </p>
+<ul id="ul-13" style="list-style-type: disc;">
+<li id="li-45">\(x=\) the <b class="terminology">unknown</b> number(s)</li>
+<li id="li-46">the distance is less than or equal to \(6\)</li>
+</ul>
+<p> In distance problems, <b class="terminology">between</b> translates to subtraction.</p>
+\begin{align*}
+\lvert x-0 \rvert\amp\amp\amp\text{Translation of }``\text{distance between \(x\) and zero"}\\
+\leq 6\amp\amp\amp\text{Translation of }``\text{less than or equal to \(6\)"}\\
+\lvert x-0 \rvert \leq 6\amp\amp\amp\text{Simplify the absolute value expression}\\
+\lvert x \rvert\leq 6\amp\amp\amp\text{Absolute value is less, use three part inequality}\\
+-6\leq x \leq 6 \amp\amp\amp \text{Inequality notation}\checkmark\\
+[-6,6] \amp\amp\amp \text{Interval notation}\checkmark
+\end{align*}
+<p>This shows \(x\) is any number between \(-6\) and \(6\text{.}\)</p></article><article class="example-like" id="example-127"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">2.B.10</span><span class="title">Absolute Value Inequality: Greater than or equal</span>
+</h6>
+<p id="p-431">Solve, graph, and give interval notation for the solution.</p>
+<p id="p-432"></p>
+\begin{align*}
+\amp \lvert x+1 \rvert \geq 3 \amp\amp \text{Absolute value is greater than a positive number,}\\
+\amp\amp\amp\text{use OR inequality}\\
+x+1\leq -3 \amp \text{  OR  } x+1\geq 3 \amp\amp \text{Solve both inequalities}\\
+\underline{-1\phantom{1}-1}\amp\phantom{123456}\underline{-1\phantom{1}-1} \amp\amp \text{Subtract \(1\) from both sides of each inequality}\\
+\color{red}{x\leq -4}\amp\text{  OR  }\phantom{1234}\color{blue}{x\geq 2} \amp\amp \text{Graph the solutions}
+\end{align*}
+<div class="sidebyside" id="sidebyside-32"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
+<div class="sbspanel" style="width:56.4102564102564%;justify-content:center;"><img src="images/absolute-value-x-plus-1-geq-3.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div>
+<div class="sbspanel" style="width:41.025641025641%;justify-content:center;">
+<p id="p-433">Our Graph \(\checkmark\)</p>
+<p id="p-434">Interval notation:</p>
+<p id="p-435">\(\left(-\infty,-4\right]\cup\left[2,\infty\right)\checkmark\)</p>
+</div>
+</div></div>
+<p id="p-436">In this case, the absolute value inequality \(\lvert x+1 \rvert \geq 3\) describes all the values which are more than \(3\) units away from \(-1\text{.}\)</p></article><p id="p-437">In the next example, we will work backwards to find a description for a distance.</p>
+<article class="example-like" id="example-128"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">2.B.11</span><span class="title">Denote Distance With an Absolute Value</span>
+</h6>
+<p id="p-438">Suppose the distance between \(t\) and \(2\) is greater than or equal to \(10.\) Describe these values in terms of an absolute value inequality.</p>
+<p id="p-439"></p>
+\begin{gather*}
+\text{Solution: }\lvert t-2\rvert \geq 10
+\end{gather*}
+<p id="p-440">State this inequality without absolue values:</p>
+\begin{align*}
+\amp\lvert t-2 \rvert \geq 10 \amp\amp \text{Absolute value is greater than a positive number,}\\
+\amp\amp\amp\text{use OR inequality}\\
+t-2\leq -10\amp\text{ OR } t-2\geq 10 \amp\amp \text{Solve both inequalities}\\
+\underline{+2\phantom{123}+2}\amp\phantom{12345}\underline{+2\phantom{12}+2} \amp\amp \text{Add \(2\) to both sides of each inequality }\\
+t\leq -8\phantom{1}\amp\text{ OR }\phantom{123}t\geq 12 \amp\amp \text{Our Solution}
+\end{align*}
+</article><article class="example-like" id="example-129"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">2.B.12</span><span class="title">Distance (OR Inequality)</span>
+</h6>
+<p id="p-441">Suppose the distance between \(x\) and \(-14\) is greater than \(3\text{.}\) Determine \(x\text{.}\)</p>
+<p id="p-442">Start by translating the words into an equation.  We will need to translate <b class="terminology">distance</b> into absolute value. We are given </p>
+<ul id="ul-14" style="list-style-type: disc;">
+<li id="li-47">\(x=\) the <b class="terminology">unknown</b> number(s)</li>
+<li id="li-48">the distance is greater than \(3\)</li>
+</ul>
+<p> In distance problems, <b class="terminology">between</b> translates to subtraction.</p>
+\begin{align*}
+\lvert x-(-14)\rvert\amp\amp\amp\text{Translation of }``\text{distance between \(x\) and \(-14\)"}\\
+\gt 3\amp\amp\amp\text{Translation of }``\text{is greater than \(3\)"}\\
+\lvert x-(-14) \rvert\gt 3\amp\amp\amp\text{Simplify the absolute value expression}\\
+\lvert x+14 \rvert\gt 3\amp\amp\amp\text{Absolute value is greater than a positive, use OR}
+\end{align*}
+<p>We now have two inequalities to solve:</p>
+\begin{align*}
+x+14\gt 3\amp\amp\amp\text{ OR }\amp\amp\amp x+14\lt -3\\
+\underline{-14}\underline{-14}\amp\amp\amp\amp\amp\amp\underline{-14}\underline{-14}\\
+x\gt -11\amp\amp\amp\text{ OR }\amp\amp\amp x\lt -17
+\end{align*}
+<p>Thus we have:</p>
+\begin{align*}
+x\lt -17\text{ or } x\gt -11\amp\amp\amp\text{Our Solution: compound inequality}\checkmark\\
+(-\infty,-17)\cup (-11,\infty)\amp\amp\amp \text{Our Solution: interval notation}\checkmark
+\end{align*}
+</article><article class="example-like" id="example-130"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">2.B.13</span><span class="title">Absolute Value Inequality</span>
+</h6>
+<p id="p-443">Solve, graph, and give interval notation for the solution.</p>
+\begin{align*}
+\amp\lvert 4x-5\rvert \geq 6 \amp\amp \text{Absolute value is greater than a positive number,}\\
+\amp\amp\amp\text{use OR inequality}\\
+4x-5\leq -6\amp\text{ OR } 4x-5\geq 6 \amp\amp \text{Solve both inequalities}\\
+\underline{+5\phantom{1}+5}\amp\phantom{1234567}\underline{+5\phantom{1}+5} \amp\amp \text{Add \(5\) to both sides of each inequality}\\
+4x\leq -1\amp\text{ OR }\phantom{123} 4x\geq 11 \amp\amp \text{Divide both sides by \(4\)}\\
+\overline{4}\phantom{1234}\overline{4}\amp\phantom{1234567}\overline{4}\phantom{12345}\overline{4} \amp\amp \\
+\color{blue}{x\leq -\dfrac{1}{4}}\amp\text{ OR }\phantom{1234}\color{red}{x\geq \dfrac{11}{4}} \amp\amp \text{Graph the solutions}
+\end{align*}
+<div class="sidebyside" id="sidebyside-33"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
+<div class="sbspanel" style="width:56.4102564102564%;justify-content:center;"><img src="images/absolute-value-4x-5-geq-6.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div>
+<div class="sbspanel" style="width:41.025641025641%;justify-content:center;">
+<p id="p-444">Our Graph \(\checkmark\)</p>
+<p id="p-445">Interval notation:</p>
+<p id="p-446">\(\left(-\infty,-\dfrac{1}{4}\right]\cup\left[\dfrac{11}{4},\infty\right)\checkmark\)</p>
+</div>
+</div></div></article><article class="example-like" id="example-131"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">2.B.14</span><span class="title">Absolute Value Inequality</span>
+</h6>
+<p id="p-447">Solve, graph, and give interval notation for the solution.</p>
+\begin{align*}
+\lvert 1-2x\rvert \color{red}{\lt} 3 \amp\amp\amp \text{Absolute value is less,}\\
+\amp\amp\amp\text{use three part inequality}\\
+-3\lt 1-2x\lt 3 \amp\amp\amp \text{Subtract 1 from all three parts}\\
+\underline{-1\phantom{123}-1\phantom{123}-1} \amp\amp\amp \\
+-4\lt -2x \lt 2 \amp\amp\amp \text{Divide all three parts by \(-2\)}\\
+\overline{-2}\phantom{123}\overline{-2}\phantom{123}\overline{-2} \amp\amp\amp \text{Dividing by a negative means switching the inequality sign}\\
+\color{green}{2\gt x \gt -1} \amp\amp\amp \text{Rewrite the inequality (not a necessary step)}\\
+\color{green}{-1\lt x \lt 2} \amp\amp\amp \text{Graph}
+\end{align*}
+<div class="sidebyside" id="sidebyside-34"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
+<div class="sbspanel" style="width:56.4102564102564%;justify-content:center;"><img src="images/absolute-value-neg1-lt-x-lt-2.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div>
+<div class="sbspanel" style="width:41.025641025641%;justify-content:center;">
+<p id="p-448">Our Graph \(\checkmark\)</p>
+<p id="p-449">Interval notation:</p>
+<p id="p-450">\(\left(-1,2\right)\checkmark\)</p>
+</div>
+</div></div></article><p id="p-451">Recall that there are two special cases when solving absolute value equations.  We must consider them for inequalities as well.</p>
+<article class="example-like" id="example-132"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">2.B.15</span><span class="title">Absolute Value is Always Greater than a Negative</span>
+</h6>
+<p id="p-452"> Solve for \(x\text{.}\)</p>
+<p id="p-453"></p>
+\begin{align*}
+\left\lvert 1 + \frac{2}{3} x \right\rvert \gt -5 \amp\amp\amp \text{What values make the LHS greater than \(-5\)?}\\
+\amp\amp\amp \text{Any value after calculating its absolute value is greater than \(-5\) }\\
+\text{All real numbers} \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><p id="p-454">Notice in the example above, the absolute value expression is always greater than a negative number.  What if the inequality involved a "less than"?</p>
+<article class="example-like" id="example-133"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">2.B.16</span><span class="title">Absolute Value With a Less Than a Negative</span>
+</h6>
+<p id="p-455"> Solve for \(x\text{.}\)</p>
+<p id="p-456"></p>
+\begin{align*}
+\lvert x - 5 \rvert \le -2 \amp\amp\amp \text{What values make the LHS less or equal to \(-2\)?}\\
+\amp\amp\amp \text{STOP! The absolute value is never negative}\\
+\text{No solution} \amp\amp\amp \text{Nope}\checkmark
+\end{align*}
+</article><p id="p-457">There is one more special case to consider.</p>
+<article class="example-like" id="example-134"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">2.B.17</span><span class="title">Absolute Value Inequalities and Zero</span>
+</h6>
+<p id="p-458"> Solve for \(x\text{.}\)</p>
+<p id="p-459"></p>
+\begin{align*}
+\lvert x-3\rvert \lt 0 \amp\amp\amp \text{Can an absolute value be less than zero?}\\
+\text{No solution} \amp\amp\amp \text{Nope }\checkmark\\
+\amp\amp\amp \\
+\text{How about the other way?} \amp\amp\amp \\
+\amp\amp\amp \\
+\lvert 2x+ 1\rvert \ge 0\amp\amp\amp \text{Absolute values are always greater or equal to zero}\\
+\amp\amp\amp\text{Any value of \(x\) will work (try a few!)}\\
+\text{All real numbers} \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article></section></section></div></main>
+</div>
+</body>
+</html>

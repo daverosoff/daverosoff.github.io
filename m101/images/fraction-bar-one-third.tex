@@ -1,0 +1,31 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb}
+
+        \usepackage{pgfplots}               % loads tikz package
+        \usepackage{xcolor}
+        \definecolor{M101_green}{RGB}{0,60,0}
+        \def\firstcircle{(0,0) circle (1.5cm)}
+		\def\secondcircle{(0:2cm) circle (1.5cm)}
+		\def\universe{(-2,-2) rectangle (4,2)}
+
+		\colorlet{circle edge}{M101_green}
+		\colorlet{circle area}{M101_green!50!white}
+
+		\tikzset{filled/.style={fill=circle area, draw=circle edge, thick},
+    outline/.style={draw=circle edge, thick}}
+        \pgfplotsset{axis x line = middle,
+                     axis y line = middle}
+        \usetikzlibrary{backgrounds}
+        \usetikzlibrary{arrows,matrix,patterns,shapes}
+    \ifdefined\tikzset
+    \tikzset{ampersand replacement = \amp}
+\fi
+
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+
+          \begin{tikzpicture}[scale=.6] \filldraw[fill=yellow, draw=black] (0,0) rectangle (15,1); \draw (5,0) -- (5,1); \draw (10,0) -- (10,1); \draw[pattern=north west lines, pattern color=black!60!white] (0.1, 0.1) rectangle (4.9, .9); \node at (16, 0.5) {$\dfrac{1}{3}$}; \end{tikzpicture}
+        \end{document}

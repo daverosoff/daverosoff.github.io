@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2018-01-08T15:17:34-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Exponents and Scientific Notation</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML-full"></script><script>$(function () {
+    // Make *any* div with class 'sagecell-sage' an executable Sage cell
+    // Their results will be linked, only within language type
+    sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
+                           linked: true,
+                           languages: ['sage'],
+                           evalButtonText: 'Evaluate (Sage)'});
+});
+</script><script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content">\(\require{cancel}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href="" target="_blank"><img src="images/seal.jpg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="index.html"><span class="title">Survey of Algebra and Probability</span><span class="subtitle">MAT 101</span></a></h1>
+<p class="byline">Robin Cruz, Lynda Danielson, Katherine Yoshiwara</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-1B-percents-and-estimation.html" title="Previous" alt="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-1-numbers.html" title="Up" alt="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="chapter-2-equations-intervals-inequalities.html" title="Next" alt="Next">Next</a></span></div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-1B-percents-and-estimation.html" title="Previous" alt="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-1-numbers.html" title="Up" alt="Up">Up</a><a class="next-button button toolbar-item" href="chapter-2-equations-intervals-inequalities.html" title="Next" alt="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></h2>
+<h2 class="link"><a href="chapter-0-preliminaries.html" data-scroll="chapter-0-preliminaries"><span class="codenumber">0</span><span class="title">Preliminaries</span></a></h2>
+<ul><li><a href="section-00-preliminaries.html" data-scroll="section-00-preliminaries">Preliminaries</a></li></ul>
+<h2 class="link active"><a href="chapter-1-numbers.html" data-scroll="chapter-1-numbers"><span class="codenumber">1</span><span class="title">Numbers</span></a></h2>
+<ul>
+<li><a href="section-1A-fractions.html" data-scroll="section-1A-fractions">Fractions</a></li>
+<li><a href="section-1B-percents-and-estimation.html" data-scroll="section-1B-percents-and-estimation">Percents and Estimation</a></li>
+<li><a href="section-1C-exponents-and-scientific-notation.html" data-scroll="section-1C-exponents-and-scientific-notation" class="active">Exponents and Scientific Notation</a></li>
+</ul>
+<h2 class="link"><a href="chapter-2-equations-intervals-inequalities.html" data-scroll="chapter-2-equations-intervals-inequalities"><span class="codenumber">2</span><span class="title">Equations, Intervals, and Inequalities</span></a></h2>
+<ul>
+<li><a href="section-2A-equations-and-absolute-value.html" data-scroll="section-2A-equations-and-absolute-value">Equations and Absolute Value</a></li>
+<li><a href="section-2B-intervals-and-inequalities.html" data-scroll="section-2B-intervals-and-inequalities">Intervals and Inequalities</a></li>
+<li><a href="section-2C-applications.html" data-scroll="section-2C-applications">Applications</a></li>
+</ul>
+<h2 class="link"><a href="chapter-3-graphs.html" data-scroll="chapter-3-graphs"><span class="codenumber">3</span><span class="title">Graphs</span></a></h2>
+<ul>
+<li><a href="section-3A-graphs.html" data-scroll="section-3A-graphs">Interpreting Graphs</a></li>
+<li><a href="section-3B-lines.html" data-scroll="section-3B-lines">Lines</a></li>
+<li><a href="section-3C-linear-models.html" data-scroll="section-3C-linear-models">Linear Models</a></li>
+</ul>
+<h2 class="link"><a href="chapter-4-sets-and-probability.html" data-scroll="chapter-4-sets-and-probability"><span class="codenumber">4</span><span class="title">Sets and Probability</span></a></h2>
+<ul>
+<li><a href="section-4A-sets-and-counting.html" data-scroll="section-4A-sets-and-counting">Sets and Counting</a></li>
+<li><a href="section-4B-probability.html" data-scroll="section-4B-probability">Probability</a></li>
+<li><a href="section-4C-probability-rules.html" data-scroll="section-4C-probability-rules">Probability Rules</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-1C-exponents-and-scientific-notation"><h2 class="heading hide-type" alt="Section 1.C Exponents and Scientific Notation">
+<span class="type">Section</span><span class="codenumber">1.C</span><span class="title">Exponents and Scientific Notation</span>
+</h2>
+<a href="section-1C-exponents-and-scientific-notation.html" class="permalink">¶</a><section class="introduction" id="introduction-4"><p id="p-142"></p>
+<ul id="ul-6" style="list-style-type: disc;">
+<li id="li-15">Simplify expressions using the properties of exponents.</li>
+<li id="li-16">Convert between standard and scientific notation.</li>
+<li id="li-17">Multiply and divide expressions using scientific notation and exponent properties.</li>
+<li id="li-18">Add and subtract expressions using scientific notation and exponent properties.</li>
+</ul></section><section class="subsection" id="subsection-15"><h3 class="heading hide-type" alt="Subsection 1.C.1 Exponent Properties">
+<span class="type">Subsection</span><span class="codenumber">1.C.1</span><span class="title">Exponent Properties</span>
+</h3>
+<p id="p-143">Recall from <a href="section-00-preliminaries.html" class="xref" alt="Section 0.0 Preliminaries" title="Section 0.0 Preliminaries">Section 0.0</a> that exponents represent repeated multiplication: </p>
+<ul id="ul-7" style="list-style-type: disc;">
+<li id="li-19">\(x^1 = x\)</li>
+<li id="li-20">\(y^2 = (y)(y)=yy\)</li>
+<li id="li-21">\(2^3 = (2)(2)(2)=8\)</li>
+<li id="li-22">\(10^4 = (10)(10)(10)(10)=10,000\)</li>
+</ul>
+<p>There are several rules that simplify operations involving exponents.</p>
+<article class="example-like" id="example-54"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.1</span><span class="title">Multiplication with Exponents</span>
+</h6>
+<p id="p-144">Simplify.</p>
+\begin{align*}
+a^3a^2 \amp\amp\amp \text{Expand exponents to multiplication problem}\\
+(aaa)(aa) \amp\amp\amp \text{Now we have \(5\) \(a\)'s being multiplied together}\\
+a^5\amp\amp\amp\text{Our Solution}\checkmark
+\end{align*}
+</article><article class="assemblage-like" id="assemblage-6"><h6 class="heading"><span class="title">WeBWorK: Entering Exponents</span></h6>
+<p id="p-145">Type <code class="code-inline tex2jax_ignore">a^5</code> for \(a^5.\)</p></article><p id="p-146">Notice that the exponents \(3\) and \(2\) give the number of times to multiply \(a,\) and the product is the total number of times \(a\) gets multiplied, \(5:\) \(a^3 a^2=a^{3+2}=a^5\text{.}\) This is known as the <b class="terminology">product rule of exponents</b>:</p>
+<p id="p-147"></p>
+\begin{gather}
+\text{Product Rule of Exponents: }
+a^m a^n=a^{m+n}\label{exponents-product-rule}\tag{1.C.1}
+\end{gather}
+<p id="p-148">The product rule of exponents can be used to multiply powers with the same base. This is shown in the following examples:</p>
+<article class="example-like" id="example-55"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.2</span><span class="title">Product Rule of Exponents</span>
+</h6>
+<p id="p-149">Simplify.</p>
+\begin{align*}
+3^2\cdot 3^6\cdot 3 \amp\amp\amp \text{Same base \((3)\), add the exponents \(2+6+1\)}\\
+3^9 \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><article class="example-like" id="example-56"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.3</span><span class="title">Product Rule of Exponents</span>
+</h6>
+<p id="p-150">Simplify.</p>
+\begin{align*}
+2x^3 y^5 z \cdot 5x y^2 z^3 \amp\amp\amp \text{Multiply \(2\cdot 5\), add exponents on each of \(x, y\) and \(z\)}\\
+10x^4 y^7 z^4 \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><p id="p-151">Next, we consider what happens when we divide with exponents.</p>
+<article class="example-like" id="example-57"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.4</span><span class="title">Division with Exponents</span>
+</h6>
+<p id="p-152">Simplify.</p>
+\begin{align*}
+\dfrac{a^5}{a^2} \amp\amp\amp \text{Expand exponents}\\
+\dfrac{aaaaa}{aa} \amp\amp\amp \text{Since \(\frac{a}{a} = 1\), each \(a\) in the bottom "cancels" an \(a\) in the top.}\\
+aaa \amp\amp\amp \text{Convert to exponents}\\
+a^3 \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><p id="p-153">Since the exponent in the denominator reduces the exponent in the numerator, we may simplfy the quotient by subtracting the exponents, \(\dfrac{a^5}{ a^2} = a^{5-2}= a^3\text{.}\) This is known as the <b class="terminology">quotient rule of exponents</b>.</p>
+<p id="p-154"></p>
+\begin{gather}
+\text{Quotient Rule of Exponents: }
+\frac{a^m}{ a^n} =a^{m-n}\label{exponents-quotient-rule}\tag{1.C.2}
+\end{gather}
+<p id="p-155">The quotient rule of exponents may be used to divide powers by subtracting exponents on like bases. This is shown in the following examples:</p>
+<article class="example-like" id="example-58"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.5</span><span class="title">Quotient Rule of Exponents</span>
+</h6>
+<p id="p-156">Simplify:</p>
+\begin{align*}
+\dfrac{7^5 x^8}{7^4 x^3} \amp\amp\amp \text{Subtract the exponents on like bases, \(5-4 = 1\) and \(8-3=5\)}\\
+7^1x^5 \amp\amp\amp \text{Note that \(7^1 = 7\) since there is only one \(7\) to multiply.}\\
+7x^5 \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><p id="p-157">A power may itself be raised to a second exponent.</p>
+<article class="example-like" id="example-59"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.6</span><span class="title">Powers with Exponents</span>
+</h6>
+<p id="p-158">Simplify.</p>
+\begin{align*}
+\left(a^2\right)^3 \amp\amp\amp \text{This means we have \(a^2\) three times--expand}\\
+a^2\cdot a^2 \cdot a^2 \amp\amp\amp \text{Add exponents}\\
+a^6 \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><p id="p-159">Since we have \(a^2\) times itself \(3\) times, we can multiply the exponents \((a^2)^3 = a^{2\cdot 3} = a^6.\) This is known as the <b class="terminology">power of a power rule of exponents</b></p>
+<p id="p-160"></p>
+\begin{gather}
+\text{Power of a Power Rule of Exponents: }
+(a^m)^n=a^{mn}\label{exponents-power-of-a-power-rule}\tag{1.C.3}
+\end{gather}
+<p id="p-161">There are two more useful properties of exponents.</p>
+<article class="example-like" id="example-60"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.7</span><span class="title">Powers of Products</span>
+</h6>
+<p id="p-162">Simplify.</p>
+\begin{align*}
+(ab)^3 \amp\amp\amp \text{This means we have \((ab)\) three times}\\
+(ab)(ab)(ab) \amp\amp\amp \text{The product of three \(a\)'s and three \(b\)'s can be written with exponents}\\
+a^3 b^3 \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><p id="p-163">We see that the exponent \(3\) applies to each factor in the product: \((ab)^3 = a^3b^3\text{.}\) This is known as the <b class="terminology">power of a product rule of exponents</b>:</p>
+<p id="p-164"></p>
+\begin{gather}
+\text{Power of a Product Rule of Exponents: }
+(ab)^m=a^m b^m\label{exponents-power-of-a-product-rule}\tag{1.C.4}
+\end{gather}
+<p id="p-165">It is important that we only use the power of a product rule with multiplication inside parentheses. This property does NOT work if there is addition or subtraction inside the parentheses.</p>
+<article class="aside-like" id="aside-2"><p id="p-166"><b><i>WARNING:</i></b> </p>
+\begin{align*}
+(a+b)^n\ne a^n+b^n \amp\amp\amp \text{These are NOT equal if \(n\ne 1\), beware of this error!}
+\end{align*}
+<p>You may check the expansion of \((a+b)^n\) for different values of \(n\) with the Sage applet given below.</p>
+<div class="sagecell-sage" id="sage-1"><script type="text/x-sage">var('a,b')
+@interact
+def binomialfunc(n=(3,[2..7])):
+    expr = (a+b)^n
+    expr2 = a^n+b^n
+    mystring = r"$${} = {} \neq {}$$".format(latex(expr),latex(expr.expand()),latex(expr2))
+    pretty_print(html(mystring))
+</script></div></article><p id="p-167">Another property that is very similar to the power of a product rule is considered next.</p>
+<article class="example-like" id="example-61"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.8</span><span class="title">Powers of Quotients</span>
+</h6>
+<p id="p-168">Simplify.</p>
+\begin{align*}
+\left(\frac{a}{b} \right)^3 \amp\amp\amp \text{This means we multiply three copies of the fraction.}\\
+\left(\frac{a}{b} \right) \left(\frac{a}{b} \right) \left(\frac{a}{b} \right) \amp\amp\amp \text{Multiply fractions across the top and bottom, using exponents}\\
+\dfrac{a^3}{b^3} \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><p id="p-169">We see that the exponent applies to each factor in both the numerator and denominator, \(\left(\frac{a}{b} \right)^3=\frac{a^3}{b^3}\text{.}\) This is known as the <b class="terminology">power of a quotient rule of exponents</b>:</p>
+<p id="p-170"></p>
+\begin{gather}
+\text{Power of a Quotient Rule of Exponents: }
+\left(\frac{a}{b} \right)^m=\frac{a^m}{b^m}\label{exponents-power-of-a-quotient-rule}\tag{1.C.5}
+\end{gather}
+<p id="p-171">We may need to use several rules to simplify an expression. This is shown in the following examples:</p>
+<article class="example-like" id="example-62"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.9</span><span class="title">Simplify Exponents</span>
+</h6>
+<p id="p-172">Simplify.</p>
+\begin{align*}
+(x^3y)^4 \amp\amp\amp \text{Raise each factor to the }4^{\mathrm{th}}\text{ power, multiply exponents}\\
+x^{12} y^4 \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><article class="assemblage-like" id="assemblage-7"><h6 class="heading"><span class="title">WeBWorK: Entering Multi-digit Exponents</span></h6>
+<p id="p-173">If your exponent has two or more digits, you must place parentheses around it. Otherwise, WeBWorK only takes the first number after the <code class="code-inline tex2jax_ignore">^</code> as the exponent: Type <code class="code-inline tex2jax_ignore">x^(12)</code> for \(x^{12}\text{.}\)</p></article><article class="example-like" id="example-63"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.10</span><span class="title">Simplify Exponents</span>
+</h6>
+<p id="p-174">Simplify.</p>
+\begin{align*}
+\left(\dfrac{a^3 b}{c^4 d^5} \right)^2 \amp\amp\amp \text{Raise each factor to the }2^{\mathrm{nd}}\text{ power, multiply exponents}\\
+\dfrac{a^6 b^2}{c^8d^{10}} \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><p id="p-175">When we multiply powers its important to remember that we add or subtract exponents, not bases. An expression such as \(5^3\) does not mean we multiply \(5\) by \(3\text{,}\) rather we multiply \(5\) three times, \(5 \cdot 5 \cdot 5 = 125\text{.}\)</p>
+<article class="example-like" id="example-64"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.11</span><span class="title">Simplify Exponents</span>
+</h6>
+<p id="p-176">Simplify.</p>
+\begin{align*}
+(4x^2 y^5)^3 \amp\amp\amp \text{Raise each factor to the }3^{\mathrm{rd}}\text{ power, multiply exponents}\\
+4^3 x^6 y^{15} \amp\amp\amp \text{Evaluate \(4^3=4\cdot 4\cdot 4\)}\\
+64x^6 y^{15} \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><p id="p-177">In the previous example we did not multipy \(4\) by the exponent \(3\) to get \(12\text{:}\) this would have been incorrect. Never multiply a base by the exponent.</p>
+<p id="p-178">The exponent properties are summarized in the following table:</p>
+<div class="sidebyside" id="sidebyside-11"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr><td class="c m b1 r0 l0 t3 lines" colspan="2">Rules of Exponents</td></tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Product Rule of Exponents</td>
+<td class="r m b0 r0 l0 t0 lines">\(a^m a^n=a^{m+n}\)<a knowl="./knowl/exponents-product-rule.html" knowl-id="xref-exponents-product-rule" alt="Equation 1.C.1 " title="Equation 1.C.1 ">(1.C.1)</a>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Quotient Rule of Exponents</td>
+<td class="r m b0 r0 l0 t0 lines">\(\frac{a^m}{a^n} =a^{m-n}\)<a knowl="./knowl/exponents-quotient-rule.html" knowl-id="xref-exponents-quotient-rule" alt="Equation 1.C.2 " title="Equation 1.C.2 ">(1.C.2)</a>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Power of a Power Rule of Exponents</td>
+<td class="r m b0 r0 l0 t0 lines">\((a^m)^n=a^{mn}\)<a knowl="./knowl/exponents-power-of-a-power-rule.html" knowl-id="xref-exponents-power-of-a-power-rule" alt="Equation 1.C.3 " title="Equation 1.C.3 ">(1.C.3)</a>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Power of a Product Rule of Exponents</td>
+<td class="r m b0 r0 l0 t0 lines">\((ab)^m=a^m b^m\)<a knowl="./knowl/exponents-power-of-a-product-rule.html" knowl-id="xref-exponents-power-of-a-product-rule" alt="Equation 1.C.4 " title="Equation 1.C.4 ">(1.C.4)</a>
+</td>
+</tr>
+<tr>
+<td class="l m b3 r0 l0 t0 lines">Power of a Quotient Rule of Exponents</td>
+<td class="r m b3 r0 l0 t0 lines">\(\left(\frac{a}{b} \right)^m=\frac{a^m}{b^m}\)<a knowl="./knowl/exponents-power-of-a-quotient-rule.html" knowl-id="xref-exponents-power-of-a-quotient-rule" alt="Equation 1.C.5 " title="Equation 1.C.5 ">(1.C.5)</a>
+</td>
+</tr>
+</table></div></div></div>
+<p id="p-179">Generally, simplifying an expression requires a combination of properties, and deciding which property to use first may be confusing. However, the order of operations  always applies and can be your guide. You should simplify inside any parentheses first, then simplify any exponents (using power rules), and finally simplify any multiplication or division (using product and quotient rules).</p>
+<article class="example-like" id="example-65"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.12</span><span class="title">Simplify Exponents</span>
+</h6>
+<p id="p-180">Simplify.</p>
+\begin{align*}
+(4x^3 y \cdot 5x^4 y^2)^3 \amp\amp\amp \underline{P}EMDAS\text{ First inside Parentheses:}\\
+\amp\amp\amp\text{Multiply constants \(4\cdot 5 = 20\),}\\\
+\amp\amp\amp\text{Apply Product Rule: add exponents}\\
+(20x^7 y^3)^3 \amp\amp\amp P\underline{E}MDAS\text{: Next Eponents:}\\
+\amp\amp\amp\text{Apply Power of a Product Rule: multiply exponents}\\
+20^3 x^{21} y^9 \amp\amp\amp \text{Evaluate \(20^3\)}\\
+8000x^{21} y^9 \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><article class="example-like" id="example-66"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.13</span><span class="title">Simplify Exponents</span>
+</h6>
+<p id="p-181">Simplify.</p>
+\begin{align*}
+7a^3(2a^4)^3 \amp\amp\amp P\underline{E}MDAS \text{ Parentheses are already simplified,}\\
+\amp\amp\amp\text{Exponents: Apply Power Rule}\\
+7a^3(2^3a^{(4)( 3)}) \amp\amp\amp \text{Simplify inside parentheses}\\
+7a^3(8a^{12}) \amp\amp\amp PE\underline{M}DAS\text{ Multiplication: \((7)(8)=56\)}\\
+\amp\amp\amp\text{Apply Product Rule: add exponents}\\
+56a^{15} \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><article class="example-like" id="example-67"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.14</span><span class="title">Simplify Exponents</span>
+</h6>
+<p id="p-182">Simplify.</p>
+\begin{align*}
+\dfrac{(3a^3 b)(10a^4 b^3)}{2a^4 b^2} \amp\amp\amp \text{Simplify numerator with Product Rule: add exponents}\\
+\dfrac{30a^7 b^4}{2a^4 b^2} \amp\amp\amp \text{Now use the Quotient Rule: subtract exponents}\\
+15a^{7-4} b^{4-2} \amp\amp\amp \text{Simplify}\\
+15a^3 b^2 \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><p id="p-183">Remember to follow the order of operations as a guide: simplify inside parentheses first, then use the power rules, then the product and quotient rules.</p></section><section class="subsection" id="subsection-16"><h3 class="heading hide-type" alt="Subsection 1.C.2 Negative Exponents">
+<span class="type">Subsection</span><span class="codenumber">1.C.2</span><span class="title">Negative Exponents</span>
+</h3>
+<p id="p-184">Next we consider zero and negative exponents.</p>
+<article class="example-like" id="example-68"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.15</span><span class="title">Investigate Zero Power</span>
+</h6>
+<p id="p-185"></p>
+\begin{align*}
+\text{ } \amp\amp\amp \underline{\text{First Method}}\amp\amp\amp \text{ } \amp\amp\amp \underline{\text{Second Method}}\\
+\dfrac{a^3}{a^3} \amp\amp\amp \text{Use the Quotient Rule,}\amp\amp\amp \dfrac{a^3}{a^3} \amp\amp\amp \text{Rewrite exponents}\\
+\amp\amp\amp \text{subtract exponents } 3-3=0 \amp\amp\amp \text{ } \amp\amp\amp \text{as repeated multiplication}\\
+a^0 \amp\amp\amp \text{Method 1 Solution}\amp\amp\amp \dfrac{aaa}{aaa} \amp\amp\amp \text{Cancel out all the \(a\)'s}\\
+\text{ } \amp\amp\amp \text{ }\amp\amp\amp \frac{1}{1}=1 \amp\amp\amp \text{Method 2 Solution}
+\end{align*}
+<p>When we combine the two solutions we get:</p>
+\begin{align*}
+\text{} \amp\amp\amp a^0=1 \amp\amp\amp \text{Our Final Result}\checkmark \amp\amp\amp \text{ }
+\end{align*}
+</article><p id="p-186">This final result is an important property known as the <b class="terminology">Zero Power Rule of Exponents</b>:</p>
+\begin{gather}
+\text{Zero Power Rule of Exponents: }
+\text{For } a \neq 0, a^0=1\label{exponents-zero-power-rule}\tag{1.C.6}
+\end{gather}
+<p>Any number or expression raised to the zero power (except \(0\)) will always be \(1\text{.}\)  The problem with \(0\text{,}\) is that \(0\) raised to any positive integer \(n\) is zero. For example, \(0^3 = 0 \cdot 0 \cdot 0 = 0\) and so there is disagreement as to what \(0^0\) should be.  We will avoid the issue by declaring it to be not defined and not include it in any of the exercises.</p>
+<article class="example-like" id="example-69"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.16</span><span class="title">Zero Power Rule of Exponents</span>
+</h6>
+<p id="p-187">Simplify.</p>
+\begin{align*}
+\frac{x^2y^4}{x^2y} \amp\amp\amp \text{Subtract exponents of like bases}\\
+x^0 y^3 \amp\amp\amp \text{Use the Zero Power Rule: \(x^0 = 1\)}\\
+y^3 \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><article class="example-like" id="example-70"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.17</span><span class="title">Investigate Negative Exponents</span>
+</h6>
+<p id="p-188"></p>
+\begin{align*}
+\text{ } \amp\amp\amp \underline{\text{First Method}}\amp\amp\amp \text{ } \amp\amp\amp \underline{\text{Second Method}}\\
+\dfrac{a^3}{a^5} \amp\amp\amp \text{Using the Quotient Rule,}\amp\amp\amp \dfrac{a^3}{a^5} \amp\amp\amp \text{Rewrite exponents}\\
+\text{ } \amp\amp\amp \text{subtract exponents \(3-5=-2\)}\amp\amp\amp \text{ } \amp\amp\amp \text{as repeated multiplication}\\
+a^{-2} \amp\amp\amp \text{Method 1 Solution}\amp\amp\amp \dfrac{aaa}{aaaaa} \amp\amp\amp \text{Reduce three \(a\)'s out of top and bottom}\\
+\text{ } \amp\amp\amp \text{ } \amp\amp\amp \dfrac{1}{aa} \amp\amp\amp \text{Simplify to exponents}\\
+\text{ } \amp\amp\amp \text{ } \amp\amp\amp \dfrac{1}{a^2} \amp\amp\amp \text{Method 2 Solution}
+\end{align*}
+<p>Since both expressions are solutions, they must be equal:</p>
+\begin{align*}
+\text{} \amp\amp\amp a^{-2}=\dfrac{1}{a^2} \amp\amp\amp \text{Our Final Result}\checkmark\amp\amp\amp \text{ }
+\end{align*}
+</article><p id="p-189">This example illustrates an important property of exponents. Negative exponents indicate the reciprocal of the base. Also, it is important to note a negative exponent does not mean the expression is negative, only that we need the reciprocal of the base.</p>
+<article class="example-like" id="example-71"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.18</span><span class="title">Simplify a Fraction with a Negative Exponent</span>
+</h6>
+<p id="p-190">Simplify.</p>
+\begin{align*}
+\left(\dfrac{5}{3} \right)^{-2} \amp\amp\amp \text{Negative exponents indicate the reciprocal of the base}\\
+\left(\dfrac{3}{5} \right)^2 \amp\amp\amp \text{The reciprocal has a positive exponent; now use the power rule}\\
+\dfrac{3^2}{5^2} \amp\amp\amp \text{Evaluate}\\
+\dfrac{9}{25} \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><p id="p-191">Following are the rules of negative exponents:</p>
+<div class="sidebyside" id="sidebyside-12"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr><td class="c m b1 r0 l0 t3 lines">Rules of Negative Exponents</td></tr>
+<tr><td class="c m b0 r0 l0 t0 lines">\(a^0=1\)<a knowl="./knowl/exponents-zero-power-rule.html" knowl-id="xref-exponents-zero-power-rule" alt="Equation 1.C.6 " title="Equation 1.C.6 ">(1.C.6)</a>
+</td></tr>
+<tr><td class="c m b0 r0 l0 t0 lines">\(a^{-m}=\dfrac{1}{a^m}\)</td></tr>
+<tr><td class="c m b0 r0 l0 t0 lines">\(\dfrac{1}{a^{-m}}= a^m\)</td></tr>
+<tr><td class="c m b0 r0 l0 t0 lines">\(\left( \dfrac{a}{b}\right)^{-m}=\dfrac{b^m}{a^m}\)</td></tr>
+</table></div></div></div>
+<p id="p-192">The rules of exponents apply to negative exponents as well as positive exponents. It is convenient to keep the negative exponents until the end of the problem and then "move them around" to their correct location (numerator or denominator). It is important to be very careful of rules for adding, subtracting, and multiplying with negatives.</p>
+<article class="example-like" id="example-72"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.19</span><span class="title">Negative Exponents</span>
+</h6>
+<p id="p-193">Simplify.</p>
+\begin{align*}
+\dfrac{6x^{-2} y^{-9}}{-12x^{-5}y^3} \amp\amp\amp \text{Handle constants first: \(\frac{6}{-12}= \frac{-1}{2}\)}\\
+\dfrac{-x^{-2} y^{-9}}{2x^{-5}y^3} \amp\amp\amp \text{Quotient rule to subtract exponents,}\\
+\text{ }\amp\amp\amp \text{be careful with negatives!}\\
+\text{ }\amp\amp\amp (-2)-(-5)=(-2)+5=3\\
+\text{ }\amp\amp\amp (-9)-3=(-9)+(-3)=-12\\
+\frac{-1}{2} x^3y^{-12} \amp\amp\amp y \text{ has a negative exponent, needs to move down to denominator}\\
+\dfrac{-x^3}{2 y^{12}} \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><article class="assemblage-like" id="assemblage-8"><h6 class="heading"><span class="title">WeBWorK: Entering Simplified Expressions</span></h6>
+<p id="p-194">Type <code class="code-inline tex2jax_ignore">-x^3/(2y^(12))</code> for \(\dfrac{-x^3}{2 y^{12}}\text{.}\)</p>
+<p id="p-195">Simplified expressions require a single fraction form: <em class="emphasis">(num)/(denom)</em> with </p>
+<ul id="ul-8" style="list-style-type: disc;">
+<li id="li-23">only integer coefficients: NOT \(\dfrac{-.5x^3}{y^{12}}\)</li>
+<li id="li-24">negative signs placed in numerator: NOT \(\dfrac{x^3}{-2 y^{12}}\)</li>
+<li id="li-25">no negative exponents: NOT \(\frac{-1}{2}x^3y^{-12}\)</li>
+</ul></article><p id="p-196">We now have the following nine properties of exponents.</p>
+<div class="sidebyside" id="sidebyside-13"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr><td class="c m b1 r0 l0 t3 lines" colspan="3">Properties of Exponents</td></tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">\(a^m a^n=a^{m+n}\)</td>
+<td class="c m b0 r0 l0 t0 lines">\((ab)^m=a^m b^m\)</td>
+<td class="c m b0 r0 l0 t0 lines">\(a^{-m}=\dfrac{1}{a^m}\)</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">\(\frac{a^m}{a^n}=a^{m-n}\)</td>
+<td class="c m b0 r0 l0 t0 lines">\(\left(\frac{a}{b} \right)^m=\frac{a^m}{b^m}\)</td>
+<td class="c m b0 r0 l0 t0 lines">\(\dfrac{1}{a^{-m}}= a^m\)</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">\((a^m)^n=a^{mn}\)</td>
+<td class="c m b0 r0 l0 t0 lines">\(a^0=1\)</td>
+<td class="c m b0 r0 l0 t0 lines">\(\left( \dfrac{a}{b}\right)^{-m}=\dfrac{b^m}{a^m}\)</td>
+</tr>
+</table></div></div></div></section><section class="subsection" id="subsection-17"><h3 class="heading hide-type" alt="Subsection 1.C.3 Scientific Notation">
+<span class="type">Subsection</span><span class="codenumber">1.C.3</span><span class="title">Scientific Notation</span>
+</h3>
+<p id="p-197">Scientific notation is used to represent really large or really small numbers. The distance that light travels in a year in miles is a really large number. The mass of a single hydrogen atom in grams is a really small number. Doing basic operations such as multiplication and division with these numbers would normally be very cumbersome. However, our exponent properties make this process much simpler.</p>
+<p id="p-198">Scientific notation is written as the product of two numbers: </p>
+<ol id="ol-2" style="list-style-type: decimal;">
+<li id="li-26">A number between one and ten (it can be equal to one, but not ten), and</li>
+<li id="li-27">Ten to some power or exponent.</li>
+</ol>
+\begin{gather}
+\text{Scientific Notation: } a\times 10^b\text{ where }1\leq  a\lt 10\tag{1.C.7}
+\end{gather}
+<p id="p-199">Recall that multiplying by \(10\) in effect moves the decimal point one place: \(3.2 \times 10^2 = 3.2 \times 100 = 320.\) So the exponent tells how many places the decimal moves when changing between scientific notation and standard notation.</p>
+<p id="p-200">Keeping this in mind, we can easily make conversions between standard notation and scientific notation.</p>
+<article class="example-like" id="example-73"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.20</span><span class="title">Convert Standard to Scientific: Large number</span>
+</h6>
+<p id="p-201"></p>
+\begin{align*}
+\text{Convert \(14,200\) to scientific notation} \amp\amp\amp \text{Put decimal after first nonzero number}\\
+1.42 \amp\amp\amp \text{Exponent is how many times decimal moved, \(4\)}\\
+\times 10^4 \amp\amp\amp \text{Positive exponent, standard notation is big}\\
+1.42 \times 10^4 \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><p id="p-202">When scientific notation is used to represent small numbers, the format requires the number be rewritten as a "bigger" value: \(0.0021\) must be written as \(2.1 \times 10^b\text{.}\)  What should the value of the exponent, \(b,\) be? Note that the decimal was moved three places and we've changed the value to be bigger than the original number.  Here is where the exponent on the \(10\) comes to the rescue.  If we divide \(2.1\) by \(10\) three times, the result will be \(.0021\text{.}\)  Dividing by \(10\) is the same thing as multipying by \(\frac{1}{10}\) and negative exponents allow us to write the fraction as a power of 10: \(10^{-1} = \frac{1}{10}.\) To finish the conversion of \(0.0021\) to scientific notation: \(0.0021 = 2.1 \times 10^{-3}.\)</p>
+<article class="example-like" id="example-74"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.21</span><span class="title">Convert Standard to Scientific: Small number</span>
+</h6>
+<p id="p-203"></p>
+<p id="p-204"></p>
+\begin{align*}
+\text{Convert \(0.0042\) to scientific notation} \amp\amp\amp \text{Put decimal after first nonzero number}\\
+4.2 \amp\amp\amp \text{Exponent is how many times decimal moved, \(3\)}\\
+\times 10^{-3} \amp\amp\amp \text{Small standard number means a negative exponent}\\
+4.2 \times 10^{-3} \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><p id="p-205">To decide which direction to move the decimal (left or right) we simply need to remember that positive exponents mean we have a big number (bigger than ten) in standard notation, and negative exponents mean we have a small number (less than one) in standard notation. The negative exponent simply informs us that we are dealing with a small number.</p>
+<article class="assemblage-like" id="assemblage-9"><h6 class="heading"><span class="title">WeBWorK: Entering Scientific Notation</span></h6>
+<p id="p-206">Use lower case <code class="code-inline tex2jax_ignore">x</code> for the times sign \(\times\text{:}\) Enter <code class="code-inline tex2jax_ignore">1.42 x 10^4</code> for \(1.42 \times 10^4.\)</p>
+<p id="p-207">For negative exponents or exponents with more than one digit in scientific notation, WeBWorK has a different rule than for general exponents.  In both cases do NOT put parentheses around the exponent: Enter <code class="code-inline tex2jax_ignore">4.2 x 10^-3</code> for \(4.2 \times 10^{-3}.\)</p>
+<p id="p-208">For exponents with two or more digits, enter <code class="code-inline tex2jax_ignore">7.24 x 10^21</code> for \(47.24 \times 10^{21}.\)</p></article><article class="example-like" id="example-75"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.22</span><span class="title">Convert Scientific to Standard</span>
+</h6>
+<p id="p-209"></p>
+<p id="p-210"></p>
+\begin{align*}
+\text{Convert \(3.21\times 10^5\) to standard notation} \amp\amp\amp \text{Positive exponent: Move decimal right \(5\) places}\\
+321,000 \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><article class="example-like" id="example-76"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.23</span><span class="title">Convert Scientific to Standard</span>
+</h6>
+<p id="p-211"></p>
+<p id="p-212"></p>
+\begin{align*}
+\text{Convert \(7.4\times 10^{-3}\) to standard notation} \amp\amp\amp \text{Negative exponent: Move decimal left \(3\) places}\\
+0.0074 \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><p id="p-213">When you use a calculator or computer, sometimes scientific notation will be displayed a little differently.  The number will look like <code class="code-inline tex2jax_ignore">2.341 E03</code> or <code class="code-inline tex2jax_ignore">2.341 e03</code>.  In this case, the <code class="code-inline tex2jax_ignore">E03</code> is short for "\(\times 10^3\)" and the number is \(2.341 \times 10^3\text{.}\)</p>
+<article class="example-like" id="example-77"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.24</span><span class="title">Interpret Computer/Calculator Notation</span>
+</h6>
+<p id="p-214"></p>
+<p id="p-215"></p>
+\begin{align*}
+\text{Convert } 5.915 E-12  \text{ to scientific notation} \amp\amp\amp \text{Exponent on \(10\) is \(-12\)}\\
+5.915 \times 10^{-12} \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article></section><section class="subsection" id="subsection-18"><h3 class="heading hide-type" alt="Subsection 1.C.4 Multiplication and Division Using Scientific Notation">
+<span class="type">Subsection</span><span class="codenumber">1.C.4</span><span class="title">Multiplication and Division Using Scientific Notation</span>
+</h3>
+<p id="p-216">To simplify a product or quotient of numbers in scientific notation, we multiply or divide the first numbers, then use exponent properties to simplify the powers of \(10\text{.}\)  Consider the following examples:</p>
+<article class="example-like" id="example-78"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.25</span><span class="title">Multiplication with Scientific Notation</span>
+</h6>
+<p id="p-217"></p>
+<p id="p-218"></p>
+\begin{align*}
+(2.1\times 10^{-7})(3.7\times 10^{5}) \amp\amp\amp \text{Deal with front numbers and \(10\)'s separately}\\
+(2.1)(3.7)=7.77 \amp\amp\amp \text{Multiply front numbers}\\
+10^{-7} 10^5=10^{-2} \amp\amp\amp \text{Use product rule on \(10\)'s and add exponents}\\
+7.77 \times 10^{-2} \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><article class="example-like" id="example-79"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.26</span><span class="title">Division with Scientific Notation</span>
+</h6>
+<p id="p-219"></p>
+\begin{align*}
+\dfrac{4.96\times 10^{4}}{3.1\times 10^{-3}} \amp\amp\amp \text{Deal with front numbers and \(10\)'s separately}\\
+\dfrac{4.96}{3.1}=1.6 \amp\amp\amp \text{Divide front numbers}\\
+\dfrac{10^{4}}{10^{-3}}=10^{7} \amp\amp\amp \text{Use quotient rule to subtract exponents,}\\
+\text{ }\amp\amp\amp \text{be careful with negatives!}\\
+\text{ }\amp\amp\amp 4-(-3)=4+3=7\\
+1.6 \times 10^{7} \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><article class="example-like" id="example-80"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.27</span><span class="title">Powers with Scientific Notation</span>
+</h6>
+<p id="p-220"></p>
+<p id="p-221"></p>
+\begin{align*}
+(1.8\times 10^{-4})^3 \amp\amp\amp \text{Use power rule to deal with front numbers and \(10\)'s separately}\\
+(1.8)^3=5.832 \amp\amp\amp \text{Evaluate \((1.8)^3\)}\\
+(10^{-4})^3=10^{-12} \amp\amp\amp \text{Multiply exponents}\\
+5.832 \times 10^{-12} \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><p id="p-222">After computation, if the front number is greater than \(10,\) we convert the front number into scientific notation and then simplify the expression.</p>
+<article class="example-like" id="example-81"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.28</span><span class="title">Multiplication with Scientific Notation</span>
+</h6>
+<p id="p-223"></p>
+<p id="p-224"></p>
+\begin{align*}
+(4.7\times 10^{-3})(6.1\times 10^9) \amp\amp\amp \text{Deal with front numbers and \(10\)'s separately}\\
+(4.7)(6.1)=28.67 \amp\amp\amp \text{Multiply the front numbers}\\
+2.867\times 10^1 \amp\amp\amp \text{Convert the front to scientific notation}\\
+10^1 10^{-3} 10^9=10^{7} \amp\amp\amp \text{Use the Product Rule: add exponents include the \(10^1\) from front conversion}\\
+2.867 \times 10^{7} \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><article class="example-like" id="example-82"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.29</span><span class="title">Division with Scientific Notation</span>
+</h6>
+<p id="p-225"></p>
+\begin{align*}
+\dfrac{2.014\times 10^{-3}}{3.8\times 10^{-7}} \amp\amp\amp \text{Deal with front numbers and \(10\)'s separately}\\
+\dfrac{2.014}{3.8}=0.53 \amp\amp\amp \text{Divide numbers}\\
+0.53=5.3\times 10^{-1} \amp\amp\amp \text{Convert this number into scientific notation}\\
+\dfrac{10^{-1} 10^{-3}}{ 10^{-7}}=10^{3} \amp\amp\amp \text{Use product and quotient rule,}\\
+\text{ }\amp\amp\amp \text{using \(10^{-1}\) from the conversion}\\
+\text{ }\amp\amp\amp \text{Be careful with signs:}\\
+\text{ }\amp\amp\amp (-1)+(-3)-(-7)=(-1)+(-3)+7=7-4=3\\
+5.3 \times 10^{3} \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article></section><section class="subsection" id="subsection-19"><h3 class="heading hide-type" alt="Subsection 1.C.5 Addition and Subtraction Using Scientific Notation">
+<span class="type">Subsection</span><span class="codenumber">1.C.5</span><span class="title">Addition and Subtraction Using Scientific Notation</span>
+</h3>
+<p id="p-226">To add or subtract numbers expressed in scientific notation we could first write both numbers in standard notation, perform the operation, and then convert back to scientific notation.</p>
+<article class="example-like" id="example-83"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.30</span><span class="title">Addition with Scientific Notation</span>
+</h6>
+<p id="p-227"></p>
+<p id="p-228"></p>
+\begin{align*}
+2.36\times 10^{6}+ 9.7\times 10^{6} \amp\amp\amp \text{Write both numbers in standard notation}\\
+2,360,000 + 9,700,000 \amp\amp\amp \text{Add numbers}\\
+12,060,000 \amp\amp\amp \text{Write the result in scientific notation}\\
+1.206 \times 10^{7} \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><p id="p-229">Because both numbers were times \(10^6\text{,}\) we also could have combined like terms involving \(10^6\text{,}\) added the front numbers, then written the result using scientific notation.</p>
+<article class="example-like" id="example-84"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.31</span><span class="title">Addition with Scientific Notation</span>
+</h6>
+<p id="p-230"></p>
+<p id="p-231"></p>
+\begin{align*}
+2.36\times 10^{6}+ 9.7\times 10^{6} \amp\amp\amp \text{Combine like terms involving \(10^6\)}\\
+(2.36+ 9.7)\times 10^{6} \amp\amp\amp \text{Add front numbers}\\
+(12.06)\times 10^{6} \amp\amp\amp \text{Write the result in scientific notation}\\
+(1.206 \times 10^1)\times 10^{6} \amp\amp\amp \text{Add exponents: \(10^1\times 10^6 = 10^{1+6}\)}\\
+1.206 \times 10^{7} \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><p id="p-232">Subtraction of numbers written using scientific notation is similar.</p>
+<article class="example-like" id="example-85"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.32</span><span class="title">Subtraction with Scientific Notation</span>
+</h6>
+<p id="p-233">Subtract and write the result using scientific notation.</p>
+<p id="p-234"></p>
+\begin{align*}
+4.77\times 10^{-7}- 4.86\times 10^{-7} \amp\amp\amp \text{Combine like terms involving \(10^{-7}\)}\\
+(4.77-4.86)\times 10^{-7} \amp\amp\amp \text{Subtract front numbers}\\
+(-0.09)\times 10^{-7} \amp\amp\amp \text{Write the result in scientific notation}\\
+(-9.0 \times 10^{-2})\times 10^{-7} \amp\amp\amp \text{Add exponents: \(10^{-2}\times 10^{-7} = 10^{-2-7}\)}\\
+-9.0 \times 10^{-9} \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><p id="p-235">If the scientific numbers do not both involve the same power of \(10\text{,}\) we adjust one of the numbers to match the power of \(10\) of the other number.</p>
+<article class="example-like" id="example-86"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">1.C.33</span><span class="title">Subtraction with Scientific Notation</span>
+</h6>
+<p id="p-236"></p>
+<p id="p-237"></p>
+\begin{align*}
+8.93\times 10^{13}- 9.26\times 10^{14} \amp\amp\amp \text{Rewrite \(10^{14}\) as \(10^1\times 10^{13}\) to match the other power of \(13\)}\\
+8.93\times 10^{13}- 9.26\times 10^1 \times 10^{13} \amp\amp\amp \text{Multiply \(-9.26\times 10^{1}\)}\\
+8.93\times 10^{13}- 92.6\times 10^{13} \amp\amp\amp \text{Combine like terms involving \(10^{13}\)}\\
+(8.93-92.6)\times 10^{13} \amp\amp\amp \text{Subtract front numbers}\\
+(-83.67)\times 10^{13} \amp\amp\amp \text{Write the result in scientific notation}\\
+(-8.367 \times 10^{1})\times 10^{13} \amp\amp\amp \text{Add exponents: \(10^{1}\times 10^{13} = 10^{1+13}\)}\\
+-8.367 \times 10^{14} \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article></section></section></div></main>
+</div>
+</body>
+</html>

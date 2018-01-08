@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2018-01-08T15:17:41-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Probability Rules</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML-full"></script><script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content">\(\require{cancel}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href="" target="_blank"><img src="images/seal.jpg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="index.html"><span class="title">Survey of Algebra and Probability</span><span class="subtitle">MAT 101</span></a></h1>
+<p class="byline">Robin Cruz, Lynda Danielson, Katherine Yoshiwara</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-4B-probability.html" title="Previous" alt="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-4-sets-and-probability.html" title="Up" alt="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-4B-probability.html" title="Previous" alt="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-4-sets-and-probability.html" title="Up" alt="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></h2>
+<h2 class="link"><a href="chapter-0-preliminaries.html" data-scroll="chapter-0-preliminaries"><span class="codenumber">0</span><span class="title">Preliminaries</span></a></h2>
+<ul><li><a href="section-00-preliminaries.html" data-scroll="section-00-preliminaries">Preliminaries</a></li></ul>
+<h2 class="link"><a href="chapter-1-numbers.html" data-scroll="chapter-1-numbers"><span class="codenumber">1</span><span class="title">Numbers</span></a></h2>
+<ul>
+<li><a href="section-1A-fractions.html" data-scroll="section-1A-fractions">Fractions</a></li>
+<li><a href="section-1B-percents-and-estimation.html" data-scroll="section-1B-percents-and-estimation">Percents and Estimation</a></li>
+<li><a href="section-1C-exponents-and-scientific-notation.html" data-scroll="section-1C-exponents-and-scientific-notation">Exponents and Scientific Notation</a></li>
+</ul>
+<h2 class="link"><a href="chapter-2-equations-intervals-inequalities.html" data-scroll="chapter-2-equations-intervals-inequalities"><span class="codenumber">2</span><span class="title">Equations, Intervals, and Inequalities</span></a></h2>
+<ul>
+<li><a href="section-2A-equations-and-absolute-value.html" data-scroll="section-2A-equations-and-absolute-value">Equations and Absolute Value</a></li>
+<li><a href="section-2B-intervals-and-inequalities.html" data-scroll="section-2B-intervals-and-inequalities">Intervals and Inequalities</a></li>
+<li><a href="section-2C-applications.html" data-scroll="section-2C-applications">Applications</a></li>
+</ul>
+<h2 class="link"><a href="chapter-3-graphs.html" data-scroll="chapter-3-graphs"><span class="codenumber">3</span><span class="title">Graphs</span></a></h2>
+<ul>
+<li><a href="section-3A-graphs.html" data-scroll="section-3A-graphs">Interpreting Graphs</a></li>
+<li><a href="section-3B-lines.html" data-scroll="section-3B-lines">Lines</a></li>
+<li><a href="section-3C-linear-models.html" data-scroll="section-3C-linear-models">Linear Models</a></li>
+</ul>
+<h2 class="link active"><a href="chapter-4-sets-and-probability.html" data-scroll="chapter-4-sets-and-probability"><span class="codenumber">4</span><span class="title">Sets and Probability</span></a></h2>
+<ul>
+<li><a href="section-4A-sets-and-counting.html" data-scroll="section-4A-sets-and-counting">Sets and Counting</a></li>
+<li><a href="section-4B-probability.html" data-scroll="section-4B-probability">Probability</a></li>
+<li><a href="section-4C-probability-rules.html" data-scroll="section-4C-probability-rules" class="active">Probability Rules</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-4C-probability-rules"><h2 class="heading hide-type" alt="Section 4.C Probability Rules">
+<span class="type">Section</span><span class="codenumber">4.C</span><span class="title">Probability Rules</span>
+</h2>
+<a href="section-4C-probability-rules.html" class="permalink">¶</a><section class="introduction" id="introduction-13"><p id="p-964"></p>
+<ul id="ul-48" style="list-style-type: disc;">
+<li id="li-140">Utilize probability properties.</li>
+<li id="li-141">Calculate conditional probabilities.</li>
+<li id="li-142">Calculate probabilities using complementary events.</li>
+<li id="li-143">Calculate probabilities using addition rules.</li>
+<li id="li-144">Determine if two events are independent or dependent.</li>
+</ul></section><section class="subsection" id="subsection-51"><h3 class="heading hide-type" alt="Subsection 4.C.1 Probability Properties">
+<span class="type">Subsection</span><span class="codenumber">4.C.1</span><span class="title">Probability Properties</span>
+</h3>
+<p id="p-965">The examples and WeBWorK problems of <a href="section-4B-probability.html" class="xref" alt="Section 4.B Probability" title="Section 4.B Probability">Section 4.B</a> demonstrated some important probability results which are summarized below.</p>
+<p id="p-966"><b class="terminology">Probability Properties</b> </p>
+<ol id="ol-9" style="list-style-type: decimal;">
+<li id="li-145">\(0\leq P(event)\leq 1\text{.}\)</li>
+<li id="li-146">If the \(P(event)=1\text{,}\) then it will happen and is called a <b class="terminology">certain event</b>.</li>
+<li id="li-147">If the \(P(event)=0\text{,}\) then it cannot happen and is called an <b class="terminology">impossible event</b>.</li>
+<li id="li-148">The probabilities of all the outcomes in a sample space add up to \(1\text{.}\)</li>
+</ol>
+<p id="p-967">Note that events with a probability closer to \(1\) are more likely to occur.  Events with a small probability (closer to \(0\)) are less likely to occur.</p></section><section class="subsection" id="subsection-52"><h3 class="heading hide-type" alt="Subsection 4.C.2 Complementary Events">
+<span class="type">Subsection</span><span class="codenumber">4.C.2</span><span class="title">Complementary Events</span>
+</h3>
+<p id="p-968">Recall the <b class="terminology">complement</b> of set \(A\text{,}\) written as \(A'\text{,}\) is the set consisting of elements in the universal set \(U\) that are <em class="emphasis">NOT</em> in \(A\text{.}\)</p>
+<p id="p-969">If two events are <b class="terminology">complementary events</b> then their probabilities add up to one.  That is </p>
+<ul id="ul-49" style="list-style-type: disc;">
+<li id="li-149">\(P(A) + P(A') =1\text{,}\) or</li>
+<li id="li-150">\(P(A)=1-P(A')\text{,}\) or</li>
+<li id="li-151">\(P(A')=1-P(A)\text{.}\)</li>
+</ul>
+<article class="example-like" id="example-232"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">4.C.1</span><span class="title">Complementary Events--Flu</span>
+</h6>
+<p id="p-970">Suppose you know the probability of not getting the flu is \(0.24\text{.}\) What is the probability of getting the flu?</p>
+<p id="p-971"></p>
+\begin{align*}
+\text{Write
+\(F\) for the event getting the flu } \amp\amp\amp \text{Then
+\(F'\) is the event not getting the flu}\\
+P(F') = 0.24 \amp\amp\amp \text{We know the probability of not getting the flu is
+\(0.24\)}\\
+P(F)=1-P(F') \amp\amp\amp \text{Use complementary events}\\
+P(F)=1-0.24=0.76 \amp\amp\amp \text{Our Solution:}
+\end{align*}
+<p>The probability of getting the flu is \(0.76\)or \(76\%\text{.}\) Since the probability of getting the flu is greater than the probability of not getting the flu, it is more likely to get the flu than not.\(\checkmark\)</p></article><article class="example-like" id="example-sample-space-deck-of-cards"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">4.C.2</span><span class="title">Complementary Events--Cards</span>
+</h6>
+<p id="p-972">In an experiment of picking a card from a deck, what is the probability of not getting a card that is a Queen?</p>
+<p id="p-973"></p>
+\begin{align*}
+SS=\amp\\
+\amp\{2S, 3S, 4S, 5S, 6S, 7S, 8S, 9S, 10S, JS, QS, KS, AS,\\
+\amp2C, 3C, 4C, 5C, 6C, 7C, 8C, 9C, 10C, JC, QC, KC, AC,\\
+\amp\color{red}{2D}, \color{red}{3D}, \color{red}{4D}, \color{red}{5D},   \color{red}{6D}, \color{red}{7D}, \color{red}{8D}, \color{red}{9D}, \color{red}{10D}, \color{red}{JD}, \color{red}{QD}, \color{red}{KD}, \color{red}{AD},\\
+\amp\color{red}{2H}, \color{red}{3H}, \color{red}{4H}, \color{red}{5H}, \color{red}{6H}, \color{red}{7H}, \color{red}{8H}, \color{red}{9H}, \color{red}{10H}, \color{red}{JH}, \color{red}{QH}, \color{red}{KH}, \color{red}{AH}\}
+\end{align*}
+<p id="p-974">The sample space has \(52\) outcomes, one for each card in the deck.  The complementary event of <em class="emphasis">not</em> getting a Queen is getting a Queen.</p>
+<p id="p-975"></p>
+\begin{align*}
+\text{Determine the probability of selecting a queen} \amp\amp\amp \text{First write the event space,
+\(Queen\)}\\
+Queen=\{QS, QC, \color{red}{QD}, \color{red}{QH} \} \amp\amp\amp \text{The event
+\(Queen\) contains
+\(4\) outcomes}\\
+P(Queen) =\dfrac{4}{52} \amp\amp\amp \text{Next use complementary events}\\
+P(Queen') = 1-\dfrac{4}{52}=\dfrac{38}{52}\approx  0.7308 \amp\amp\amp \text{Our Solution:}
+\end{align*}
+<p>The probability of not selecting a queen is \(\dfrac{38}{52}\)or about \(73.08\%\checkmark\text{.}\)</p></article><p id="p-976">The complement is useful when you are trying to find the probability of an event that involves the words <em class="emphasis">"at least"</em> or an event that involves the words <em class="emphasis">"at most"</em>. As an example of an at least event is suppose you want to find the probability of making <em class="emphasis"><b class="terminology">at least</b></em> \(\$50,000\) when you graduate from college. That means you want the probability of your salary being greater than or equal to \(\$50,000\text{.}\) An example of an at most event is suppose you want to find the probability of rolling a die and getting <em class="emphasis"><b class="terminology">at most</b></em>a \(4\text{.}\) That means that you want to get less than or equal to a \(4\) on the die. The reason to use the complement is that sometimes it is easier to find the probability of the complement and then subtract from \(1\text{.}\)</p>
+<article class="example-like" id="example-234"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">4.C.3</span><span class="title">Complementary Events--At Least</span>
+</h6>
+<p id="p-977">Two fair dice are rolled. Determine the probability of rolling a sum of at least a \(4\text{.}\)</p>
+<p id="p-978">The \(SS\) is written in <a knowl="./knowl/example-2-dice-sample-space.html" knowl-id="xref-example-2-dice-sample-space" alt="Example 4.B.4 Two Dice Sample Space" title="Example 4.B.4 Two Dice Sample Space">Example 4.B.4</a>. Recall the sample space has \(36\) outcomes. Rolling a sum that is <em class="emphasis">at least</em> \(4\) would involve listing all of the sums that are \(4\) or more. It would be much easier to list the outcomes that make up the complement. First write \(D\) for the sum of the dots showing.</p>
+\begin{align*}
+\text{Determine the probability of rolling a sum less than
+\(4\). } \amp\amp\amp \text{Write the event space
+\((D\lt 4)\).}\\
+\text{
+\((D\lt 4) =\{(\color{red}{1},\color{green}{1}), (\color{red}{1},\color{green}{2}),  (\color{red}{2},\color{green}{1})\}\)} \amp\amp\amp \text{The event
+\((D\lt 4)\) contains
+\(3\) outcomes}\\
+P(D\lt 4) =\dfrac{3}{36} \amp\amp\amp \text{Next use complementary events.}\\
+P(D\ge 4) = 1-P(D\lt 4)= 1-\dfrac{3}{36}=\dfrac{33}{36}\approx  0.9167 \amp\amp\amp \text{Our Solution:}
+\end{align*}
+<p>The probability of rolling a sum of <em class="emphasis">at least</em> a \(4\) is \(\dfrac{33}{36}\) or about \(91.67\%\checkmark\text{.}\)</p></article></section><section class="subsection" id="subsection-53"><h3 class="heading hide-type" alt="Subsection 4.C.3 Probability Rules">
+<span class="type">Subsection</span><span class="codenumber">4.C.3</span><span class="title">Probability Rules</span>
+</h3>
+<article class="example-like" id="example-card-probabilities"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">4.C.4</span><span class="title">Probability--Select One Card</span>
+</h6>
+<p id="p-979">In an experiment of picking one card from a deck, what is the probability of getting a Jack and an Ace? What is the probability of getting a Jack or an Ace? What is the probability of getting a Spade or an Ace?</p>
+<p id="p-980">Recall the sample space for a deck of cards in <a knowl="./knowl/example-sample-space-deck-of-cards.html" knowl-id="xref-example-sample-space-deck-of-cards" alt="Example 4.C.2 Complementary Events--Cards" title="Example 4.C.2 Complementary Events--Cards">Example 4.C.2</a></p>
+<p id="p-981">(a) Determine the probability of selecting a Jack \(J\) AND an Ace \(A\text{.}\) First write the event space, \(J\cap A\text{.}\)</p>
+\begin{align*}
+J\cap A=\{ \} \amp\amp\amp \text{The event
+\(J\cap A\) contains
+\(0\) outcomes since you can't do that with \emph{one} card. }\\
+P(J\cap A) =\dfrac{0}{52} \amp\amp\amp \text{Our Solution (a):}
+\end{align*}
+<p>The probability of getting a Jack and an Ace is \(0\checkmark\text{.}\)</p>
+<p id="p-982">(b) Determine the probability of selecting a Jack \(J\) OR an Ace \(A\text{.}\) First write the event space, \(J\cup A\text{.}\)</p>
+\begin{align*}
+J\cup A=\{JS, JC, JD, JH, AS, AC, AD, AH \} \amp\amp\amp \text{The event
+\(J\cup A\) contains
+\(8\) outcomes. }\\
+P(J\cup A) =\dfrac{8}{52}\approx 0.1538 \amp\amp\amp \text{Our Solution (b):}
+\end{align*}
+<p>The probability of getting a Jack or an Ace is \(\dfrac{8}{52}\) or approximately \(15.38\%\checkmark\text{.}\)</p>
+<p id="p-983">(c) Determine the probability of selecting a Spade \(S\) OR an Ace \(A\text{.}\) First write the event space, \(S\cup A\text{.}\)</p>
+\begin{align*}
+\amp S\cup A=\amp\amp\\
+\amp\{2S, 3S, 4S, 5S, 6S, 7S, 8S, 9S, 10S,\amp\amp\\
+\amp JS, QS, KS, AS, AC, AD, AH \}\amp\amp \text{The event
+\(S\cup A\) contains
+\(16\) outcomes.}\\
+\amp P(S\cup A) =\dfrac{16}{52}\approx 0.3077 \amp\amp \text{Our Solution (c):}
+\end{align*}
+<p>The probability of getting a Spade or an Ace is \(\dfrac{16}{52}\) or approximately \(30.77\%\checkmark\text{.}\)</p></article><p id="p-984">Part (a) of <a knowl="./knowl/example-card-probabilities.html" knowl-id="xref-example-card-probabilities" alt="Example 4.C.4 Probability--Select One Card" title="Example 4.C.4 Probability--Select One Card">Example 4.C.4</a> demonstrates an <b class="terminology">impossible event</b>: selecting a Jack and an Ace on one draw.  Parts (b) and (c) demonstrate another probability concept.  Notice that:</p>
+<p id="p-985">\(P(J\cup A) =\dfrac{8}{52} = \dfrac{4}{52}+ \dfrac{4}{52} = P(J) + P(A)\) \(P(S\cup A) =\dfrac{16}{52} \neq \dfrac{17}{52} = \dfrac{13}{52}+ \dfrac{4}{52} = P(S) + P(A)\)</p>
+<p id="p-986">Why does adding two individual probabilities together work in one situation to give the probability of one or another event and not give the correct probability in the other?</p>
+<p id="p-987">The reason this is true in the case of the Jack and the Ace is that these two events cannot happen together. There is no overlap between the two events, and in fact the \(P(J \cap A) = 0\text{.}\) However, in the case of the Spade and Ace, they can happen together. There is overlap, mainly the ace of spades. The \(P(S \cap A) \neq 0\text{.}\)</p>
+<p id="p-988">When two events cannot happen at the same time, they are called <b class="terminology">mutually exclusive</b>. In the above situation, the events Jack and Ace are mutually exclusive, while the events Spade and Ace are not mutually exclusive.</p>
+<p id="p-989"><b class="terminology">Addition Rules:</b> </p>
+<ul id="ul-50" style="list-style-type: disc;">
+<li id="li-152">If two events \(A\) and \(B\) are mutually exclusive, then \(P(A\cup B) =P(A)+ P(B)\) and \(P(A\cap B)=0\text{.}\)</li>
+<li id="li-153">If two events \(A\) and \(B\) are not mutually exclusive, then \(P(A\cup B) =P(A)+ P(B) -P(A\cap B)\text{.}\)</li>
+</ul>
+<article class="example-like" id="example-236"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">4.C.5</span><span class="title">Mutually Exclusive</span>
+</h6>
+<p id="p-990">(Recall Example <a knowl="./knowl/example-titanic.html" knowl-id="xref-example-titanic" alt="Example 4.B.8 Two-Way Table Probabilities" title="Example 4.B.8 Two-Way Table Probabilities">Example 4.B.8</a>.) The number of people who survived the Titanic based on class and gender is in the below table ("Encyclopedia Titanica," 2013).</p>
+<div class="sidebyside" id="sidebyside-121"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b0 r1 l1 t1 lines"></td>
+<td class="c m b0 r1 l0 t1 lines" colspan="2">Gender</td>
+<td class="c m b0 r1 l0 t1 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Class</td>
+<td class="c m b1 r1 l0 t0 lines">Female (\(F\))</td>
+<td class="c m b1 r1 l0 t0 lines">Male (\(M)\)</td>
+<td class="c m b1 r1 l0 t0 lines">Total</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1st\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(134\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(59\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(193\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2nd\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(94\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(25\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(119\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(3rd\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(80\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(58\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(138\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Total</td>
+<td class="c m b1 r1 l0 t0 lines">\(308\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(142\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(450\)</td>
+</tr>
+</table></div></div></div>
+<p id="p-991">Determine if the events survivor is a female and survivor is in the first class are mutually exclusive.</p>
+<p id="p-992">Label the event spaces \(F\) for female and \(1st\) for first class.</p>
+\begin{align*}
+\text{Determine
+\(n(F\cap 1st)\)} \amp\amp\amp n(F\cap 1st)=134 
+\end{align*}
+<p>Mutually exclusive events cannot happen at the same time which means there would be no overlap or intersection.</p>
+\begin{align*}
+n(F\cap 1st)=134\neq 0 \amp\amp\amp \text{Our Solution:}
+\end{align*}
+<p>Since there were female survivors from the first class, the events survivor is a female and survivor is in the first class are <em class="emphasis">NOT</em> mutually exclusive.\(\checkmark\)</p></article></section><section class="subsection" id="subsection-54"><h3 class="heading hide-type" alt="Subsection 4.C.4 Conditional Probability">
+<span class="type">Subsection</span><span class="codenumber">4.C.4</span><span class="title">Conditional Probability</span>
+</h3>
+<p id="p-993">Suppose you want to figure out if you should buy a new car. When you first go and look, you find two cars that you like the most. In your mind they are equal, and so each has a \(50\%\) chance that you will pick it. Then you start to look at the reviews of the cars and realize that the first car has had \(40\%\) of them needing to be repaired in the first year, while the second car only has \(10\%\) of the cars needing to be repaired in the first year. You could use this information to help you decide which car you want to actually purchase. Both cars no longer have a \(50\%\) chance of being the car you choose. You could actually calculate the probability you will buy each car, which is a conditional probability. You probably wouldn't do this, but it gives you an example of what a conditional probability is.</p>
+<p id="p-994"><b class="terminology">Conditional probabilities</b> are probabilities calculated after information is given. This is where you want to find the probability of event \(A\) happening after you know that event \(B\) has happened. If you know that \(B\) has happened, then you don't need to consider the rest of the sample space. You only need the outcomes that make up event \(B\text{.}\) Event \(B\) becomes the new sample space, which is called the restricted sample space, \(R\text{.}\) If you always write a restricted sample space when doing conditional probabilities and use this as your sample space, you will have no trouble with conditional probabilities. The notation for conditional probabilities is \(P(A, \text{ given } B) = P(A|B)\text{.}\) The event following the vertical line is always the restricted sample space.</p>
+<article class="example-like" id="example-237"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">4.C.6</span><span class="title">Conditional Probability--Titanic</span>
+</h6>
+<p id="p-995">(Recall <a knowl="./knowl/example-titanic.html" knowl-id="xref-example-titanic" alt="Example 4.B.8 Two-Way Table Probabilities" title="Example 4.B.8 Two-Way Table Probabilities">Example 4.B.8</a>.) The number of people who survived the Titanic based on class and gender is in the below table ("Encyclopedia Titanica," 2013). Suppose a person is picked at random from the survivors.</p>
+<div class="sidebyside" id="sidebyside-122"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b0 r1 l1 t1 lines"></td>
+<td class="c m b0 r1 l0 t1 lines" colspan="2">Gender</td>
+<td class="c m b0 r1 l0 t1 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Class</td>
+<td class="c m b1 r1 l0 t0 lines">Female (\(F\))</td>
+<td class="c m b1 r1 l0 t0 lines">Male (\(M)\)</td>
+<td class="c m b1 r1 l0 t0 lines">Total</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1st\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(134\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(59\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(193\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2nd\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(94\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(25\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(119\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(3rd\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(80\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(58\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(138\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Total</td>
+<td class="c m b1 r1 l0 t0 lines">\(308\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(142\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(450\)</td>
+</tr>
+</table></div></div></div>
+<p id="p-996">Determine the following probabilities.</p>
+<p id="p-997">(a) Determine the probability that a survivor was in the first class. Label the event space \(1st\) for first class.</p>
+\begin{align*}
+P(1st) = \dfrac{n(1st)}{\text{Total #}}=\dfrac{193}{450}\approx 0.4289 \amp\amp\amp \text{Our Solution (a):}
+\end{align*}
+<p>The probability that a survivor was in the first class is \(\dfrac{193}{450}\) or about \(42.89\%\checkmark\text{.}\)</p>
+<p id="p-998">(b) Determine the probability that a survivor was female given the person was in the first class. Label the event space \(F | 1st\) for female <em class="emphasis">GIVEN</em> in the first class. In this case we know the person is in first class because of the GIVEN. This means only the number of survivors in the \(1st\) row will be considered.</p>
+\begin{align*}
+P(F | 1st) = \dfrac{n(F\cap 1st)}{\text{n(1st)}}=\dfrac{134}{193}\approx 0.6943 \amp\amp\amp \text{Our Solution (b):}
+\end{align*}
+<p>The probability that a survivor was a female given the person was in the first class is \(\dfrac{134}{193}\) or about \(69.43\%\checkmark\text{.}\)</p></article><article class="example-like" id="example-238"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">4.C.7</span><span class="title">Conditional Probability--Dice</span>
+</h6>
+<p id="p-999">Two fair dice are rolled. Determine the probability of rolling a sum of \(5\text{,}\) given that the first die is a \(2\text{.}\)</p>
+<p id="p-1000"></p>
+\begin{align*}
+\text{Given the first die is a
+\(2\). } \amp\amp\amp \text{Write the restricted sample space,
+\(R\). }\\
+R =\{(\color{red}{2},\color{green}{1}), (\color{red}{2},\color{green}{2}),  (\color{red}{2},\color{green}{3}), (\color{red}{2},\color{green}{4}), (\color{red}{2},\color{green}{5}),  (\color{red}{2},\color{green}{6})\} \amp\amp\amp \text{Determine the event space
+\((D=5)\) out of
+\(R\).}\\
+(D=5)=\{(\color{red}{2},\color{green}{3})\} \amp\amp\amp \text{The event
+\((D=5)\) contains
+\(1\) outcome.}\\
+P(D=5|\text{the first die is a }2)=\\
+\dfrac{n(D=5)}{n(R)}=\dfrac{1}{6}\approx  0.1667 \amp\amp\amp \text{Our Solution:}
+\end{align*}
+<p>The probability of rolling a sum of \(5\text{,}\) given that the first die is a \(2\) is \(\dfrac{1}{6}\) or about \(16.67\%\checkmark\text{.}\)</p></article><article class="example-like" id="example-conditional-cards"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">4.C.8</span><span class="title">Conditional Probability--Cards</span>
+</h6>
+<p id="p-1001">Suppose you pick a card from a deck. What is the probability of getting a Spade, given that the card is a Jack?</p>
+<p id="p-1002"></p>
+\begin{align*}
+\text{We know the card is a Jack.} \amp\amp\amp \text{Write the restricted sample space,
+\(R\). }\\
+R =\{JS, JC, JD, JH\} \amp\amp\amp \text{Determine the event space
+\(Spade\) out of
+\(R\). }\\
+Spade=\{  JS\} \amp\amp\amp \text{The event
+\(Spade\) contains
+\(1\) outcome. }\\
+P(Spade|\text{the card is a }Jack)=\\
+\dfrac{n(Spade)}{n(R)}=\dfrac{1}{4}=  0.25 \amp\amp\amp \text{Our Solution:}
+\end{align*}
+<p>The probability of getting a Spade, given that the card is a Jack is \(\dfrac{1}{4}\) or \(25\%\checkmark\text{.}\)</p></article><p id="p-1003">If you look at the results of <a knowl="./knowl/example-conditional-cards.html" knowl-id="xref-example-conditional-cards" alt="Example 4.C.8 Conditional Probability--Cards" title="Example 4.C.8 Conditional Probability--Cards">Example 4.C.8</a>, notice that you get \(P(Spade|\text{the card is a }Jack)=\dfrac{1}{4}\) which is exactly the same as \(P(Spade)=\dfrac{13}{52}\) since there are \(13\) total spades in the entire deck. This means that knowing that the card is a Jack did not change the probability that the card is a Spade. This added knowledge did not help you in any way. It is as if that information was not given at all. However, if you compare the conditional probability of <a knowl="./knowl/example-card-probabilities.html" knowl-id="xref-example-card-probabilities" alt="Example 4.C.4 Probability--Select One Card" title="Example 4.C.4 Probability--Select One Card">Example 4.C.4</a> \(P(D=5|\text{the first die is a }2)=\dfrac{1}{6}\approx 16.67\%\) with \(P(D=5)=\dfrac{n(D=5)}{36}=\dfrac{4}{36}\approx 11.11\%\text{,}\) you will notice that they are not the same answer. In this case, knowing that the first die is a \(2\) did change the probability of getting a sum of \(5\text{.}\) In the first case, the events \(Spade\) and \(\text{the card is a }Jack\) are called <b class="terminology">independent events</b>. In the second case, the events sum of \(5\) and first die is a \(2\) are called <b class="terminology">dependent events</b>.</p></section><section class="subsection" id="subsection-55"><h3 class="heading hide-type" alt="Subsection 4.C.5 Independent Events">
+<span class="type">Subsection</span><span class="codenumber">4.C.5</span><span class="title">Independent Events</span>
+</h3>
+<p id="p-1004">Events \(A\) and \(B\) are considered <b class="terminology">independent events</b> if the fact that one event happens does not change the probability of the other event happening. In other words, events \(A\) and \(B\) are independent if the fact that \(B\) has happened does not affect the probability of event \(A\) happening and the fact that \(A\) has happened does not affect the probability of event \(B\) happening. Otherwise, the two events are dependent.</p>
+<p id="p-1005">In symbols, \(A\) and \(B\) are <b class="terminology">independent</b> if \(P(A|B) = P(A)\) or \(P(B|A) = P(B)\text{.}\)</p>
+<article class="example-like" id="example-240"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">4.C.9</span><span class="title">Independent Events--Titanic</span>
+</h6>
+<p id="p-1006">(Recall <a knowl="./knowl/example-titanic.html" knowl-id="xref-example-titanic" alt="Example 4.B.8 Two-Way Table Probabilities" title="Example 4.B.8 Two-Way Table Probabilities">Example 4.B.8</a>.) The number of people who survived the Titanic based on class and gender is in the below table ("Encyclopedia Titanica," 2013). Suppose a person is picked at random from the survivors.</p>
+<div class="sidebyside" id="sidebyside-123"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b0 r1 l1 t1 lines"></td>
+<td class="c m b0 r1 l0 t1 lines" colspan="2">Gender</td>
+<td class="c m b0 r1 l0 t1 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Class</td>
+<td class="c m b1 r1 l0 t0 lines">Female (\(F\))</td>
+<td class="c m b1 r1 l0 t0 lines">Male (\(M)\)</td>
+<td class="c m b1 r1 l0 t0 lines">Total</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1st\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(134\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(59\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(193\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2nd\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(94\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(25\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(119\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(3rd\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(80\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(58\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(138\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Total</td>
+<td class="c m b1 r1 l0 t0 lines">\(308\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(142\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(450\)</td>
+</tr>
+</table></div></div></div>
+<p id="p-1007">Determine if the events <em class="emphasis">"survivor is a female"</em> and <em class="emphasis">"survivor is in first class"</em> are independent.</p>
+<p id="p-1008">Label the event spaces \(F\) for female and \(1st\) for first class. Compute both \(P(F|1st)\) and \(P(F)\text{.}\) In symbols, \(F\) and \(1st\) are <b class="terminology">independent</b> if \(P(F|1st) = P(F)\text{.}\)</p>
+\begin{align*}
+P(F | 1st) = \dfrac{n(F\cap 1st)}{\text{n(1st)}}=\dfrac{134}{193}\approx 0.6943 \amp\amp\amp P(F) = \dfrac{n(F)}{\text{Total #}}=\dfrac{308}{450}\approx 0.6844\\
+P(F|1st) \neq P(F) \amp\amp\amp \text{Since
+\(0.6943\neq  0.6844\) Our Solution:}
+\end{align*}
+<p>The events <em class="emphasis">"survivor is a female"</em> and <em class="emphasis">"survivor is in first class"</em> are <em class="emphasis">NOT</em> independent.  Thus, the events <em class="emphasis">"survivor is a female"</em> and <em class="emphasis">"survivor is in first class"</em> are dependent.\(\checkmark\)</p></article><article class="example-like" id="example-241"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">4.C.10</span><span class="title">Independent Events--Dice</span>
+</h6>
+<p id="p-1009">Two fair dice are rolled. Are the events <em class="emphasis">"sum of 7"</em> and <em class="emphasis">"first die is a 3"</em> independent?</p>
+<p id="p-1010"></p>
+\begin{align*}
+\text{It doesn't matter which event is
+\(A\) or
+\(B\).} \amp\amp\amp \text{Assign one as
+\(A\) and one as
+\(B\).}\\
+\text{Let
+\(A=\) sum of
+\(7\)} \amp\amp\amp A=\{ (\color{red}{1},\color{green}{6}), (\color{red}{2},\color{green}{5}),  (\color{red}{3},\color{green}{4}), (\color{red}{4},\color{green}{3}), (\color{red}{5},\color{green}{2}),  (\color{red}{6},\color{green}{1})\}\\
+\text{Let
+\(B=\) first die is a
+\(3\)} \amp\amp\amp B=\{ (\color{red}{3},\color{green}{1}), (\color{red}{3},\color{green}{2}),  (\color{red}{3},\color{green}{3}), (\color{red}{3},\color{green}{4}), (\color{red}{3},\color{green}{5}),  (\color{red}{3},\color{green}{6})\}\\
+\text{Compute
+\(P(A|B)\) and
+\(P(A)\)} \amp\amp\amp \text{Events are independent if
+\(P(A|B) = P(A)\)}\\
+\text{
+\(P(A|B)\) means that \(B\) is GIVEN.} \amp\amp\amp \text{The restricted sample space
+\(R = B\)}\\
+R=\{ (\color{red}{3},\color{green}{1}), (\color{red}{3},\color{green}{2}),  (\color{red}{3},\color{green}{3}), (\color{red}{3},\color{green}{4}), (\color{red}{3},\color{green}{5}),  (\color{red}{3},\color{green}{6})\} \amp\amp\amp \text{Determine the event space
+\(A=\) sum of
+\(7\) out of
+\(R\)}\\
+\text{Event space
+\(A=\) sum of
+\(7\) out of
+\(R=\{  (\color{red}{3},\color{green}{4})\}\)} \amp\amp\amp \text{The event \(A\) contains
+\(1\) outcome. }\\
+\text{
+\(P(A|B)=\dfrac{1}{6}\)} \amp\amp\amp \text{Compute
+\(P(A)\) out of the entire
+\(SS\).}\\
+\text{
+\(P(A)=\dfrac{6}{36}\)} \amp\amp\amp \text{Compare
+\(P(A|B)\) and
+\(P(A)\). }\\
+\text{
+\(P(A|B)=\dfrac{1}{6}=\dfrac{6}{36}=P(A)\)} \amp\amp\amp \text{Our Solution:}
+\end{align*}
+<p>The events <em class="emphasis">"sum of 7"</em> and <em class="emphasis">"first die is a 3"</em>  are independent\(\checkmark\text{.}\)</p></article><p id="p-1011">Two events \(A\) and \(B\) are <b class="terminology">independent</b> if the fact that \(B\) has happened does not affect the probability of event \(A\) happening.  In the case of offspring, we consider the genders to be independent.  This means, the probability of the gender of the second child is not affected by the actual gender of the first child born.  Consider the following example.</p>
+<article class="example-like" id="example-242"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">4.C.11</span><span class="title">Probability Tree</span>
+</h6>
+<p id="p-1012">Male calico cats are quite rare.  In fact, the probability of a cat having a boy calico kitten is only \(3\%\text{.}\)  Suppose a cat has \(3\) calico kittens.  Use a <b class="terminology">probability tree</b> to determine the following probabilities.</p>
+<p id="p-1013">Let </p>
+<ul id="ul-51" style="list-style-type: disc;">
+<li id="li-154">\(B\) represent a boy kitten</li>
+<li id="li-155">\(G\) represent a girl kitten</li>
+</ul>
+<p> Illustrate the possibilities with a tree diagram.</p>
+<div class="sidebyside" id="sidebyside-124"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:40%;justify-content:center;">
+<p id="p-1014">The tree has \(8\) endpoints, one for each element in the sample space.</p>
+<p id="p-1015">The possibility \(BGB\text{,}\) for example, indicates that the first kitten is a boy, the second born a girl, and the third a boy.</p>
+</div>
+<div class="sbspanel" style="width:55%;justify-content:center;"><img width="100%" src="images/tree-gender.svg" alt=""></div>
+</div></div>
+<p id="p-1016">We are told \(P(B)=0.03\text{.}\) Determine the probability of a girl using complementary events, since \(B'=G\text{.}\)</p>
+\begin{gather*}
+P(G)=P(B')=1-P(B)=1-0.03=0.97
+\end{gather*}
+<p>Label the corresponding branches of the tree.</p>
+<div class="sidebyside" id="sidebyside-125"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:40%;justify-content:center;">
+<p id="p-1017">Each branch with an outcome of \(B\) has a \(0.03\) chance of occurring.</p>
+<p id="p-1018">Each branch with an outcome of \(G\) has a \(0.97\) chance of occurring.</p>
+</div>
+<div class="sbspanel" style="width:55%;justify-content:center;"><img src="images/probability-tree-gender.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div>
+</div></div>
+<p id="p-1019">(a) Determine the probability of all \(3\) calico kittens being boys. Multiply the probabilities along the path to the outcome \(BBB\text{.}\)</p>
+\begin{align*}
+P(BBB)=(0.03)(0.03)(0.03) = 0.000027 \amp\amp\amp \text{Our Solution (a):}
+\end{align*}
+<p>The probability of all \(3\) calico kittens being boys is \(0.0027\%\text{,}\) which is extremely unlikely.\(\checkmark\)</p>
+<p id="p-1020">(b) Determine the probability of <b class="terminology">at least one</b> of the calico kittens being a boy. Recall complementary events help determine probabilities of events involving "at least". Notice there is only one outcome with no male kittens: \(GGG\text{.}\) All of the other outcomes have at least one male kitten.  This means the event <em class="emphasis">"at least one boy"</em> is the complement of the event \(GGG\text{.}\) Use the complement: \(P(\text{at least one boy})=1-P(GGG)\text{.}\) Multiply the probabilities along the path to the outcome \(GGG\text{.}\)</p>
+\begin{align*}
+\amp P(GGG)= (0.97)(0.97)(0.97)\approx 0.9127 \amp\amp \text{Now use the complement}\\
+\amp P(\text{at least one boy})=1-P(GGG)=\amp\amp\\
+\amp 1-(0.97)^3\approx 1-0.9127=0.0873 \amp\amp \text{Our Solution (b):}
+\end{align*}
+<p>The probability of at least one of the calico kittens being a boy is approximately \(8.73\%\checkmark\text{.}\)</p></article></section></section></div></main>
+</div>
+</body>
+</html>

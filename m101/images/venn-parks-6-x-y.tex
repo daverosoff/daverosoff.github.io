@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb}
+
+        \usepackage{pgfplots}               % loads tikz package
+        \usepackage{xcolor}
+        \definecolor{M101_green}{RGB}{0,60,0}
+        \def\firstcircle{(0,0) circle (1.5cm)}
+		\def\secondcircle{(0:2cm) circle (1.5cm)}
+		\def\universe{(-2,-2) rectangle (4,2)}
+
+		\colorlet{circle edge}{M101_green}
+		\colorlet{circle area}{M101_green!50!white}
+
+		\tikzset{filled/.style={fill=circle area, draw=circle edge, thick},
+    outline/.style={draw=circle edge, thick}}
+        \pgfplotsset{axis x line = middle,
+                     axis y line = middle}
+        \usetikzlibrary{backgrounds}
+        \usetikzlibrary{arrows,matrix,patterns,shapes}
+    \ifdefined\tikzset
+    \tikzset{ampersand replacement = \amp}
+\fi
+
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\begin{tikzpicture} \draw \universe;
+              \node[anchor=south east] at (current bounding box.south east) {$U$};
+              \draw[outline] \firstcircle node[shift={(-1.5,1.5)}] {$D$};
+              \draw[outline] \secondcircle node[shift={(1.5,1.5)}] {$K$};
+              \node[shift={(1,0)}] {$\color{red}{6}$};
+              \node[shift={(0,0)}] {$\color{blue}{x}$};
+              \node[shift={(2,0)}] {$\color{green}{y}$}; \end{tikzpicture} \end{document}
