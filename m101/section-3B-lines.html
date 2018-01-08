@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2018-01-08T15:17:38-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Lines</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML-full"></script><script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content">\(\require{cancel}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href="" target="_blank"><img src="images/seal.jpg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="index.html"><span class="title">Survey of Algebra and Probability</span><span class="subtitle">MAT 101</span></a></h1>
+<p class="byline">Robin Cruz, Lynda Danielson, Katherine Yoshiwara</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-3A-graphs.html" title="Previous" alt="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-3-graphs.html" title="Up" alt="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-3C-linear-models.html" title="Next" alt="Next">Next</a></span></div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-3A-graphs.html" title="Previous" alt="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-3-graphs.html" title="Up" alt="Up">Up</a><a class="next-button button toolbar-item" href="section-3C-linear-models.html" title="Next" alt="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></h2>
+<h2 class="link"><a href="chapter-0-preliminaries.html" data-scroll="chapter-0-preliminaries"><span class="codenumber">0</span><span class="title">Preliminaries</span></a></h2>
+<ul><li><a href="section-00-preliminaries.html" data-scroll="section-00-preliminaries">Preliminaries</a></li></ul>
+<h2 class="link"><a href="chapter-1-numbers.html" data-scroll="chapter-1-numbers"><span class="codenumber">1</span><span class="title">Numbers</span></a></h2>
+<ul>
+<li><a href="section-1A-fractions.html" data-scroll="section-1A-fractions">Fractions</a></li>
+<li><a href="section-1B-percents-and-estimation.html" data-scroll="section-1B-percents-and-estimation">Percents and Estimation</a></li>
+<li><a href="section-1C-exponents-and-scientific-notation.html" data-scroll="section-1C-exponents-and-scientific-notation">Exponents and Scientific Notation</a></li>
+</ul>
+<h2 class="link"><a href="chapter-2-equations-intervals-inequalities.html" data-scroll="chapter-2-equations-intervals-inequalities"><span class="codenumber">2</span><span class="title">Equations, Intervals, and Inequalities</span></a></h2>
+<ul>
+<li><a href="section-2A-equations-and-absolute-value.html" data-scroll="section-2A-equations-and-absolute-value">Equations and Absolute Value</a></li>
+<li><a href="section-2B-intervals-and-inequalities.html" data-scroll="section-2B-intervals-and-inequalities">Intervals and Inequalities</a></li>
+<li><a href="section-2C-applications.html" data-scroll="section-2C-applications">Applications</a></li>
+</ul>
+<h2 class="link active"><a href="chapter-3-graphs.html" data-scroll="chapter-3-graphs"><span class="codenumber">3</span><span class="title">Graphs</span></a></h2>
+<ul>
+<li><a href="section-3A-graphs.html" data-scroll="section-3A-graphs">Interpreting Graphs</a></li>
+<li><a href="section-3B-lines.html" data-scroll="section-3B-lines" class="active">Lines</a></li>
+<li><a href="section-3C-linear-models.html" data-scroll="section-3C-linear-models">Linear Models</a></li>
+</ul>
+<h2 class="link"><a href="chapter-4-sets-and-probability.html" data-scroll="chapter-4-sets-and-probability"><span class="codenumber">4</span><span class="title">Sets and Probability</span></a></h2>
+<ul>
+<li><a href="section-4A-sets-and-counting.html" data-scroll="section-4A-sets-and-counting">Sets and Counting</a></li>
+<li><a href="section-4B-probability.html" data-scroll="section-4B-probability">Probability</a></li>
+<li><a href="section-4C-probability-rules.html" data-scroll="section-4C-probability-rules">Probability Rules</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-3B-lines"><h2 class="heading hide-type" alt="Section 3.B Lines">
+<span class="type">Section</span><span class="codenumber">3.B</span><span class="title">Lines</span>
+</h2>
+<a href="section-3B-lines.html" class="permalink">¶</a><section class="introduction" id="introduction-9"><p id="p-620"></p>
+<ul id="ul-37" style="list-style-type: disc;">
+<li id="li-92">Determine the slope and \(y\)-intercept of a line given a graph or two points.</li>
+<li id="li-93">Determine if a line rises, falls, or is horizontal based on its slope.</li>
+<li id="li-94">Determine the slope-intercept form of a linear equation.</li>
+<li id="li-95">Compare relative steepness of lines of varying slopes.</li>
+</ul></section><section class="subsection" id="subsection-38"><h3 class="heading hide-type" alt="Subsection 3.B.1 Slope">
+<span class="type">Subsection</span><span class="codenumber">3.B.1</span><span class="title">Slope</span>
+</h3>
+<p id="p-621">One of the most important properties of a line is its slope. Slope is a measure of steepness. A line with a large slope, such as 25, is very steep. A line with a small slope, such as \(\frac{1}{10}\) is very flat. We will also use slope to describe the direction of the line. A line that rises from left to right has a positive slope, and a line that falls from left to right has a negative slope. A horizontal line has zero slope. To measure steepness we are interested in how fast the line rises compared to how far the line runs. For this reason we will describe slope as the fraction \(\dfrac{\text{rise}}{\text{run}}\text{.}\)</p>
+<p id="p-622">Rise is a vertical change, or a change in the \(y\)-values. Run wis a horizontal change, or a change in the \(x\)-values. So another way to describe slope would be the fraction \(\frac{\text{change in } y}{\text{change in } x}\text{.}\) We can draw vertical and horizontal lines from one point to another to make what is called a slope triangle. The sides of the slope triangle give us our slope.</p>
+<article class="example-like" id="example-170"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">3.B.1</span><span class="title">Determine Slope Given Graph</span>
+</h6>
+<p id="p-623"></p>
+<div class="sidebyside" id="sidebyside-62"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:55%;justify-content:center;"><img src="images/negative-slope.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div>
+<div class="sbspanel" style="width:40%;justify-content:center;">
+<p id="p-624">To determine the slope of this line we will consider the rise, or vertical change, and the run, or horizontal change. Drawing in these lines makes a slope triangle that we can use to count from one point to the next.</p>
+<p id="p-625">The graph goes down \(4\text{,}\) right \(6\text{.}\) This is rise \(-4\text{,}\) run \(6\text{.}\)</p>
+<p id="p-626">As a fraction it would be \(\frac{-4}{6}\text{.}\) Reduce the fraction to get \(\frac{-2}{3}\text{.}\) The slope is negative, indicating that this line falls.</p>
+</div>
+</div></div>
+<div class="sidebyside" id="sidebyside-63"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
+<div class="sbspanel" style="width:56.4102564102564%;justify-content:center;"><p id="p-627">Slope = \(-\frac{2}{3}\)</p></div>
+<div class="sbspanel" style="width:41.025641025641%;justify-content:center;"><p id="p-628">Our Solution\(\checkmark\)</p></div>
+</div></div></article><article class="example-like" id="example-171"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">3.B.2</span><span class="title">Determine Slope Given Graph</span>
+</h6>
+<p id="p-629"></p>
+<div class="sidebyside" id="sidebyside-64"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
+<div class="sbspanel" style="width:56.4102564102564%;justify-content:center;"><img src="images/positive-slope.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div>
+<div class="sbspanel" style="width:41.025641025641%;justify-content:center;">
+<p id="p-630">For this line, the rise is up \(6\text{,}\) the run is right \(3\text{.}\)</p>
+<p id="p-631">Our slope is then written as a fraction, \(\frac{\text{rise}}{\text{run}}\) or \(\frac{6}{3}\text{.}\) This fraction reduces to \(2\text{.}\)</p>
+<p id="p-632">The slope is positive, indicating this line rises.</p>
+</div>
+</div></div>
+<div class="sidebyside" id="sidebyside-65"><div class="sbsrow" style="margin-left:0.833333333333333%;margin-right:0.833333333333333%;">
+<div class="sbspanel" style="width:20.3389830508475%;justify-content:center;"><p id="p-633"></p></div>
+<div class="sbspanel" style="width:35.593220338983%;justify-content:center;"><p id="p-634">Slope = \(2\)</p></div>
+<div class="sbspanel" style="width:40.6779661016949%;justify-content:center;"><p id="p-635">Our Solution\(\checkmark\)</p></div>
+</div></div></article><p id="p-636">There are two special lines illustrated in the following example.</p>
+<article class="example-like" id="example-172"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">3.B.3</span><span class="title">Special Slopes</span>
+</h6>
+<div class="sidebyside" id="sidebyside-66"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:center;"><img src="images/horizontal-slope.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div>
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:center;"><img src="images/vertical-slope.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div>
+</div></div>
+<div class="sidebyside" id="sidebyside-67"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:center;"><p id="p-637">In this graph there is no rise, but the run is \(3\) units. This slope becomes \(\frac{0}{3}=0\text{.}\) This line, and all horizontal lines have a <b class="terminology">zero slope</b>.</p></div>
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:center;"><p id="p-638">This line has a rise of \(5\text{,}\) but no run. The slope becomes \(\frac{5}{0}=\) undefined. This line, and all vertical lines, have <b class="terminology">no slope</b>. \(\checkmark\)</p></div>
+</div></div></article><p id="p-639">As you can see there is a big difference between having a zero slope and having no slope or undefined slope. Remember, slope is a measure of steepness. The first slope is not steep at all, in fact it is flat. Therefore it has a zero slope. The second slope can't get any steeper. It is so steep that there is no number large enough to express how steep it is. This is an undefined slope.</p>
+<p id="p-640">We can find the slope of a line through two points without seeing the points on a graph. We can do this using a slope formula. We can calculate the change in \(y\) values by subtracting the \(y\) coordinates of the points. Similarly, the change in the \(x\) values, we can calculate by subtracting the \(x\) coordinates of the points.</p>
+<p id="p-641"></p>
+\begin{gather}
+\text{The slope of a line through }
+(x_1, y_1)\text{ and }
+(x_2, y_2)\text{ is }
+\dfrac{y_2-y_1}{x_2-x_1}\label{equation-slope}\tag{3.B.1}
+\end{gather}
+<p id="p-642">When mathematicians began working with slope, it was called the modular slope. For this reason we often represent the slope with the variable \(m\text{.}\) Now we have the following formula:</p>
+<article class="aside-like" id="aside-5"><p id="p-643"></p>
+\begin{gather}
+\text{Slope}
+=m=\dfrac{\text{rise}}{\text{run}}=\dfrac{\text{change in } y}{\text{change in }x} =\dfrac{y_2-y_1}{x_2-x_1}\label{equation-m-slope}\tag{3.B.2}
+\end{gather}
+</article><p id="p-644">When calculating slope, it is important we subtract the \(y\) values and the \(x\) values in the same order.</p>
+<article class="example-like" id="example-173"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">3.B.4</span><span class="title">Determine Slope Given Two Points</span>
+</h6>
+<p id="p-645">Determine the slope and describe the line.</p>
+<p id="p-646">Determine the slope between \((-4, 3)\) and \((2,-9)\text{.}\) First identify \(x_1, y_1, x_2, y_2\text{.}\)</p>
+\begin{align*}
+(x_1, y_1)\amp =(-4, 3)\text{ and}\\
+(x_2,y_2)\amp =(2,-9) \amp\amp\text{Use slope formula
+\(m=\dfrac{y_2-y_1}{x_2-x_1}\)}\\
+m\amp =\dfrac{-9-3}{2-(-4)} \amp\amp \text{Simplify}\\
+m\amp =\dfrac{-12}{6} \amp\amp \text{Reduce}\\
+m\amp =-2\lt 0\text{, falls} \amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><article class="example-like" id="example-174"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">3.B.5</span><span class="title">Determine Slope Given Two Points</span>
+</h6>
+<p id="p-647">Determine the slope and describe the line.</p>
+<p id="p-648">Determine the slope between \((4, 6)\) and \((2,-1)\text{.}\) First identify \(x_1, y_1, x_2, y_2\text{.}\)</p>
+\begin{align*}
+(x_1, y_1)\amp =(4, 6)\text{ and}\\
+(x_2,y_2)\amp =(2,-1) \amp\amp\text{Use slope formula
+\(m=\dfrac{y_2-y_1}{x_2-x_1}\)}\\
+m\amp =\dfrac{-1-6}{2-4}\amp\amp \text{Simplify}\\
+m\amp =\dfrac{-7}{-2} \amp\amp \text{Reduce, multiplying}\\
+\amp\amp\amp\text{both numerator and denominator by
+\(-1\)}\\
+m\amp =\dfrac{7}{2}\gt 0\text{, rises} \amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><article class="example-like" id="example-175"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">3.B.6</span><span class="title">Determine Slope Given Two Points</span>
+</h6>
+<p id="p-649">Determine the slope and describe the line.</p>
+<p id="p-650">Determine the slope between \((-4,-1)\) and \((-4,-5)\text{.}\) First identify \(x_1, y_1, x_2, y_2\text{.}\)</p>
+\begin{align*}
+(x_1, y_1)\amp =(-4,-1)\text{ and}\\
+(x_2,y_2)\amp =(-4,-5) \amp\amp\text{Use slope formula
+\(m=\dfrac{y_2-y_1}{x_2-x_1}\)}\\
+m\amp =\dfrac{-5-(-1)}{-4-(-4)}\amp\amp \text{Simplify}\\
+m\amp =\dfrac{-4}{0} \amp\amp \text{Can't divide by zero, undefined}\\
+m\amp =\text{does not exist (no slope),} \amp\amp \text{Our Solution}\checkmark\\
+\text{vertical}\amp\amp\amp
+\end{align*}
+</article><article class="example-like" id="example-176"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">3.B.7</span><span class="title">Determine Slope Given Two Points</span>
+</h6>
+<p id="p-651">Determine the slope and describe the line.</p>
+<p id="p-652">Determine the slope between \((3,1)\) and \((-2,1)\text{.}\) First identify \(x_1, y_1, x_2, y_2\text{.}\)</p>
+\begin{align*}
+(x_1, y_1)\amp =(3,1)\text{ and}\\
+(x_2,y_2)\amp =(-2,1) \amp\amp\text{Use slope formula
+\(m=\dfrac{y_2-y_1}{x_2-x_1}\)}\\
+m\amp =\dfrac{1-1}{-2-3}\amp\amp \text{Simplify}\\
+m\amp =\dfrac{0}{-5} \amp\amp \text{Reduce}\\
+m\amp =0\text{, horizontal} \amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><p id="p-653"> <b><i>Note: There is a big difference between a <b class="terminology">zero slope</b> and <b class="terminology">no slope</b>.</i></b> </p>
+<ul id="ul-38" style="list-style-type: disc;">
+<li id="li-96">
+<b class="terminology">Zero</b> is an integer and it has a value: <em class="emphasis">slope</em> \(=0\) indicates a flat horizontal line.</li>
+<li id="li-97">
+<b class="terminology">No slope</b> has no value, it is undefined: <em class="emphasis">slope undefined</em> indicates a vertical line.</li>
+</ul>
+<article class="assemblage-like" id="assemblage-20"><h6 class="heading"><span class="title">Slope of Vertical Lines in WeBWorK</span></h6>
+<p id="p-654">Type <code class="code-inline tex2jax_ignore">undefined</code> for the slope of a vertical line.</p></article></section><section class="subsection" id="subsection-39"><h3 class="heading hide-type" alt="Subsection 3.B.2 Slope-Intercept Form">
+<span class="type">Subsection</span><span class="codenumber">3.B.2</span><span class="title">Slope-Intercept Form</span>
+</h3>
+<p id="p-655">We have used a table of values to graph a line. However, if we can identify some properties of the line, we can make a graph much more quickly. One such method uses the </p>
+<ul id="ul-39" style="list-style-type: disc;">
+<li id="li-98">slope (represented by \(m\)) and the</li>
+<li id="li-99">\(y\)-intercept (represented by \(b\))</li>
+</ul>
+<p>of the equation. Recall that the \(y\)-intercept is the point where the line crosses the vertical axis and that \(x = 0\) at this point.  Thus the \(y\)-intercept is the point \((0, b)\) where the graph crosses the vertical \(y\)-axis. Recall that any other point on the line can be represented by \((x, y)\text{.}\) Using this information we will look at the slope formula and solve the formula for \(y\text{.}\)</p>
+<article class="example-like" id="example-177"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">3.B.8</span><span class="title">Determine Slope-Intercept Form</span>
+</h6>
+<p id="p-656"></p>
+\begin{align*}
+\text{
+\(m, (0,b), (x,y)\)} \amp\amp\amp \text{Using the slope formula
+\(\dfrac{y_2-y_1}{x_2-x_1}=m\) gives:}\\
+\dfrac{y-b}{x-0}\amp =m \amp\amp \text{Simplify: \(x-0=x\)}\\
+\dfrac{y-b}{x}\amp =m \amp\amp \text{Multiply both sides by
+\(x\)}\\
+y-b\amp =mx \amp\amp \text{Add
+\(b\) to both sides}\\
+\underline{+b}\amp\underline{\phantom{12345}+b} \amp\amp\amp \text{ }\\
+y\amp =mx+b \amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><p id="p-657">This equation, \(y =mx + b\) can be thought of as the equation of any line that has a slope of \(m\) and a \(y\)-intercept of \(b\text{.}\) This formula is known as the slope-intercept equation.</p>
+\begin{gather}
+\text{Slope-Intercept Equation: }
+y=mx+b\label{equation-slope-intercept}\tag{3.B.3}
+\end{gather}
+<p id="p-658">If we know the slope and the \(y\)-intercept we can easily determine the equation that represents the line.</p>
+<article class="example-like" id="example-178"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">3.B.9</span><span class="title">Determine Equation Given Slope and Intercept</span>
+</h6>
+<p id="p-659"></p>
+\begin{align*}
+\text{Slope
+\(=\dfrac{3}{4}\),
+\(y\)-intercept
+\(=-3\)} \amp\amp\amp \text{Use the slope-intercept equation}\\
+\text{
+\(y =mx+b\)} \amp\amp\amp \text{
+\(m\) is the slope,
+\(b\) is the
+\(y\)-intercept}\\
+\text{
+\(y=\dfrac{3}{4}x-3\)} \amp\amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><p id="p-660">We can also determine the equation by looking at a graph and finding the slope and \(y\)-intercept.</p>
+<article class="example-like" id="example-179"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">3.B.10</span><span class="title">Determine Equation Given Graph</span>
+</h6>
+<div class="sidebyside" id="sidebyside-68"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
+<div class="sbspanel" style="width:56.4102564102564%;justify-content:center;"><img src="images/determine-equation.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div>
+<div class="sbspanel" style="width:41.025641025641%;justify-content:center;">
+<p id="p-661">Identify the point where the graph crosses the \(y\)-axis \((0,3)\text{.}\) This means the \(y\)-intercept is \(3\text{.}\)</p>
+<p id="p-662">Identify one other point and draw a slope triangle to find the slope. The slope is \(-\frac{2}{3}\text{.}\)</p>
+</div>
+</div></div>
+<div class="sidebyside" id="sidebyside-69"><div class="sbsrow" style="margin-left:0.833333333333333%;margin-right:0.833333333333333%;">
+<div class="sbspanel" style="width:20.3389830508475%;justify-content:center;"><p id="p-663"></p></div>
+<div class="sbspanel" style="width:30.5084745762712%;justify-content:center;"><p id="p-664">\(y =mx+b\)</p></div>
+<div class="sbspanel" style="width:45.7627118644068%;justify-content:center;"><p id="p-665">Slope-intercept equation <a knowl="./knowl/equation-slope-intercept.html" knowl-id="xref-equation-slope-intercept" alt="Equation 3.B.3 " title="Equation 3.B.3 ">(3.B.3)</a></p></div>
+</div></div>
+<div class="sidebyside" id="sidebyside-70"><div class="sbsrow" style="margin-left:0.833333333333333%;margin-right:0.833333333333333%;">
+<div class="sbspanel" style="width:20.3389830508475%;justify-content:center;"><p id="p-666"></p></div>
+<div class="sbspanel" style="width:30.5084745762712%;justify-content:center;"><p id="p-667">\(y =-\dfrac{2}{3}x+3\)</p></div>
+<div class="sbspanel" style="width:45.7627118644068%;justify-content:center;"><p id="p-668">Our Solution\(\checkmark\)</p></div>
+</div></div></article><p id="p-669">We can also use an equation to identify the slope and \(y\)-intercept and then graph the equation using this information. To put the equation in slope-intercept form, we solve it for \(y\text{.}\)</p>
+<article class="example-like" id="example-180"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">3.B.11</span><span class="title">Determine Slope and Intercept</span>
+</h6>
+<p id="p-670">Determine the slope and intercept of \(2x-4y =6\text{.}\)</p>
+<p id="p-671">Write in slope-intercept form:</p>
+\begin{align*}
+2x-4y\amp =6 \amp\amp \text{Solve for
+\(y\)}\\
+\underline{-2x\phantom{1234}}\amp\underline{\phantom{123}-2x} \amp\amp \text{Subtract
+\(2x\) from both sides}\\
+-4y\amp =-2x+6 \amp\amp \text{Put
+\(x\) term first on RHS}\\
+\overline{-4}\amp\phantom{1234}\overline{-4}\phantom{1}\overline{-4} \amp\amp \text{Divide each term by
+\(-4\)}\\
+\text{Slope-intercept form: }
+y\amp =\dfrac{1}{2}x-\dfrac{3}{2}\amp\amp \text{Slope-intercept equation
+\(y=mx+b\)}\\
+\text{Slope: }
+m=\dfrac{1}{2}\amp\text{, Intercept: }
+b=\dfrac{3}{2} \amp\amp \text{Our Solution}\checkmark
+\end{align*}
+</article><p id="p-672">Once we have an equation in slope-intercept form we can graph it by </p>
+<ul id="ul-40" style="list-style-type: disc;">
+<li id="li-100">plotting the \(y\)-intercept, then</li>
+<li id="li-101">using the slope ( <em class="emphasis">rise/run</em>), plotting a second point, then</li>
+<li id="li-102">connecting the dots</li>
+</ul>
+<article class="example-like" id="example-181"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">3.B.12</span><span class="title">Graph Line Given Slope-Intercept Equation</span>
+</h6>
+<p id="p-673"></p>
+\begin{align*}
+\text{ Graph
+\(y =\dfrac{1}{2}x-4\)} \amp\amp\amp \text{Recall the slope-intercept equation }\\
+y =mx+b \amp\amp\amp \text{Identify the slope,
+\(m\), and the
+\(y\)-intercept,
+\(b\)}\\
+\text{
+\(m=\dfrac{1}{2}, b=-4\)} \amp\amp\amp \text{Make the graph}
+\end{align*}
+<div class="sidebyside" id="sidebyside-71"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
+<div class="sbspanel" style="width:56.4102564102564%;justify-content:center;"><img src="images/determine-graph-pos-slope.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div>
+<div class="sbspanel" style="width:41.025641025641%;justify-content:center;">
+<p id="p-674">Start with a point \((0, -4)\) at the \(y\)-intercept of \(-4\text{.}\)</p>
+<p id="p-675">Then use the slope \(\frac{\text{rise}}{\text{run}}\text{:}\) rise up \(1\) unit and run \(2\) units right to plot the next point \((2,-3)\text{.}\)</p>
+<p id="p-676">Once we have both points plotted, connect the dots to get our graph. \(\checkmark\)</p>
+</div>
+</div></div></article><article class="example-like" id="example-182"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">3.B.13</span><span class="title">Graph Line</span>
+</h6>
+<p id="p-677">Graph.</p>
+\begin{align*}
+3x+4y\amp =12 \amp\amp \text{Not in slope intercept form}\\
+\underline{-3x\phantom{1234}}\amp\underline{\phantom{12345}-3x} \amp\amp \text{Subtract
+\(3x\) from both sides}\\
+4y\amp =-3x+12 \amp\amp \text{Put
+\(x\) term first}\\
+\overline{4}\amp\hphantom{1234}\overline{4}\hphantom{12345}\overline{4}\amp\amp \text{Divide each term by
+\(4\)}\\
+y\amp =-\dfrac{3}{4}x+3 \amp\amp \text{Recall the slope-intercept equation }\\
+y\amp =mx+b \amp\amp \text{Identify the slope,
+\(m\), and the
+\(y\)-intercept,
+\(b\)}\\
+m=-\dfrac{3}{4}\amp\text{, } b=3\amp\amp \text{Make the graph}
+\end{align*}
+<div class="sidebyside" id="sidebyside-72"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
+<div class="sbspanel" style="width:56.4102564102564%;justify-content:center;"><img src="images/determine-graph-neg-slope.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div>
+<div class="sbspanel" style="width:41.025641025641%;justify-content:center;">
+<p id="p-678">Start with a point at the \(y\)-intercept of \(3\text{.}\)</p>
+<p id="p-679">Then use the slope \(\frac{\text{rise}}{\text{run}}\text{.}\) It's negative so it will go downhill: go down \(3\) units and run \(4\) units right to plot the next point.</p>
+<p id="p-680">Once we have both points, connect the dots to get our graph. \(\checkmark\)</p>
+</div>
+</div></div></article><p id="p-681">Be very careful not to confuse using slope to find the next point with using coordinates such as \((4, -2)\) to find an individual point. Using coordinates we start from the origin \((0,0)\) and move horizontally first, and vertically second. Using slope, we start from any point on the line. The numerator of the slope is the vertical change and the denominator is the horizontal change.</p>
+<p id="p-682">Lines with zero slope or no slope can make a problem seem very different. A horizontal line has slope of zero, which when multiplied by \(x\) gives zero in the equation. So the equation simply becomes \(y = b\) (the \(y\)-intercept of the graph). The equation of a vertical line can't be written in slope-intercept form at all because the slope is undefined. There is no \(y\) in these equations. We will simply make \(x\) equal to the \(x\)-intercept of the graph.</p>
+<article class="example-like" id="example-183"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">3.B.14</span><span class="title">Vertical Line Equation</span>
+</h6>
+<div class="sidebyside" id="sidebyside-73"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
+<div class="sbspanel" style="width:56.4102564102564%;justify-content:center;"><img src="images/vertical-line.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div>
+<div class="sbspanel" style="width:41.025641025641%;justify-content:center;">
+<p id="p-683">Give the equation of the line in the graph.</p>
+<p id="p-684">Because we have a vertical line and no slope there is no slope-intercept equation we can use. Rather we make \(x\) equal to the \(x\)-intercept of \(-4\text{.}\)</p>
+</div>
+</div></div>
+<div class="sidebyside" id="sidebyside-74"><div class="sbsrow" style="margin-left:0.833333333333333%;margin-right:0.833333333333333%;">
+<div class="sbspanel" style="width:20.3389830508475%;justify-content:center;"><p id="p-685"></p></div>
+<div class="sbspanel" style="width:35.593220338983%;justify-content:center;"><p id="p-686">\(x=-4\)</p></div>
+<div class="sbspanel" style="width:40.6779661016949%;justify-content:center;"><p id="p-687">Our Solution\(\checkmark\)</p></div>
+</div></div></article><article class="example-like" id="example-184"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">3.B.15</span><span class="title">Horizontal Line Equation</span>
+</h6>
+<div class="sidebyside" id="sidebyside-75"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
+<div class="sbspanel" style="width:56.4102564102564%;justify-content:center;"><img src="images/horizontal-line.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div>
+<div class="sbspanel" style="width:41.025641025641%;justify-content:center;">
+<p id="p-688">Give the equation of the line in the graph.</p>
+<p id="p-689">Because we have a horizontal line the slope is zero. Thus the equation has \(y\) equal to the \(y\)-intercept of \(2\text{.}\)</p>
+</div>
+</div></div>
+<div class="sidebyside" id="sidebyside-76"><div class="sbsrow" style="margin-left:0.833333333333333%;margin-right:0.833333333333333%;">
+<div class="sbspanel" style="width:20.3389830508475%;justify-content:center;"><p id="p-690"></p></div>
+<div class="sbspanel" style="width:35.593220338983%;justify-content:center;"><p id="p-691">\(y=2\)</p></div>
+<div class="sbspanel" style="width:40.6779661016949%;justify-content:center;"><p id="p-692">Our Solution\(\checkmark\)</p></div>
+</div></div></article></section></section></div></main>
+</div>
+</body>
+</html>

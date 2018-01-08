@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2018-01-08T15:18:03-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<article class="example-like"><h6 class="heading">
+<span class="type">Example</span><span class="codenumber">4.C.11</span><span class="title">Probability Tree</span>
+</h6>
+<p>Male calico cats are quite rare.  In fact, the probability of a cat having a boy calico kitten is only \(3\%\text{.}\)  Suppose a cat has \(3\) calico kittens.  Use a <b class="terminology">probability tree</b> to determine the following probabilities.</p>
+<p>Let </p>
+<ul style="list-style-type: disc;">
+<li>\(B\) represent a boy kitten</li>
+<li>\(G\) represent a girl kitten</li>
+</ul>
+<p> Illustrate the possibilities with a tree diagram.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:40%;justify-content:center;">
+<p>The tree has \(8\) endpoints, one for each element in the sample space.</p>
+<p>The possibility \(BGB\text{,}\) for example, indicates that the first kitten is a boy, the second born a girl, and the third a boy.</p>
+</div>
+<div class="sbspanel" style="width:55%;justify-content:center;"><img width="100%" src="images/tree-gender.svg" alt=""></div>
+</div></div>
+<p>We are told \(P(B)=0.03\text{.}\) Determine the probability of a girl using complementary events, since \(B'=G\text{.}\)</p>
+\begin{gather*}
+P(G)=P(B')=1-P(B)=1-0.03=0.97
+\end{gather*}
+<p>Label the corresponding branches of the tree.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:40%;justify-content:center;">
+<p>Each branch with an outcome of \(B\) has a \(0.03\) chance of occurring.</p>
+<p>Each branch with an outcome of \(G\) has a \(0.97\) chance of occurring.</p>
+</div>
+<div class="sbspanel" style="width:55%;justify-content:center;"><img src="images/probability-tree-gender.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div>
+</div></div>
+<p>(a) Determine the probability of all \(3\) calico kittens being boys. Multiply the probabilities along the path to the outcome \(BBB\text{.}\)</p>
+\begin{align*}
+P(BBB)=(0.03)(0.03)(0.03) = 0.000027 \amp\amp\amp \text{Our Solution (a):}
+\end{align*}
+<p>The probability of all \(3\) calico kittens being boys is \(0.0027\%\text{,}\) which is extremely unlikely.\(\checkmark\)</p>
+<p>(b) Determine the probability of <b class="terminology">at least one</b> of the calico kittens being a boy. Recall complementary events help determine probabilities of events involving "at least". Notice there is only one outcome with no male kittens: \(GGG\text{.}\) All of the other outcomes have at least one male kitten.  This means the event <em class="emphasis">"at least one boy"</em> is the complement of the event \(GGG\text{.}\) Use the complement: \(P(\text{at least one boy})=1-P(GGG)\text{.}\) Multiply the probabilities along the path to the outcome \(GGG\text{.}\)</p>
+\begin{align*}
+\amp P(GGG)= (0.97)(0.97)(0.97)\approx 0.9127 \amp\amp \text{Now use the complement}\\
+\amp P(\text{at least one boy})=1-P(GGG)=\amp\amp\\
+\amp 1-(0.97)^3\approx 1-0.9127=0.0873 \amp\amp \text{Our Solution (b):}
+\end{align*}
+<p>The probability of at least one of the calico kittens being a boy is approximately \(8.73\%\checkmark\text{.}\)</p></article><span class="incontext"><a href="section-4C-probability-rules.html#example-242">in-context</a></span>
+</body>
+</html>
